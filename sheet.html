@@ -2,44 +2,210 @@
 <html>
 <head>
 <link href="style.css" rel="stylesheet" type="text/css" media="all"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <title>Mega Cheat sheet</title></head>
 <body>
 
 
-<main>
-<h2>container</h2>
+<div class="content-section">
+<section class="vertical">
+FLEX
+</section>
+
 	<section>
-		
-			<div class="div-head">display</div>
-			<div class="div-head">flex-direction</div>
-			<div class="div-head">flex-wrap</div>
-			<div class="div-head">justify-content</div>
+	
+			<div class="div-head">Enable flex for children</div>
+				<div class="div-child">
+					<ul>
+						<li>display: flex</li>
+						<li>display: inline-flex</li>
+					</ul>
+				</div>
+				<div class="div-head">Establish main axis</div>
+				<div class="div-child">
+					<ul>
+						<li>flex-direction: row</li>
+						<li>flex-direction: row-reverse</li>
+						<li>flex-direction: column</li>
+						<li>flex-direction: column-reverse</li>
+					</ul>
 				
-			<div class="div-child"><h3>enables flex for all children.</h3>
-				<ul>
-					<li>display: flex</li>
-					<li>display: inline-flex</li>
-				</ul>
-			</div>
-			
-			<div class="div-child"><h3>establishes the main axis.</h3>
-			
-			</div>
-			
-			<div class="div-child"><h3>wraps items if not fitting on one line</h3>
-			
-			</div>
-			
-			<div class="div-child"><h3>attempts to distribute extra space on the main axis.</h3>
-			
-			</div>
-			
+				</div>
+	</section>
+	
+	<section>
+			<div class="div-head">Wrap items</div>
+				<div class="div-child">
+					<ul>
+						<li>flex-wrap: nowrap</li>
+						<li>flex-wrap: wrap</li>
+						<li>flex-wrap: wrap-reverse</li>
+					</ul>
 				
+				
+				</div>
+				<div class="div-head">Cross axis layout</div>
+				<div class="div-child">
+					<ul>
+						<li>align-items: flex-start</li>
+						<li>align-items: flex-end</li>
+						<li>align-items: center</li>
+						<li>align-items: baseline</li>
+						<li>align-items: stretch</li>
+					</ul>
+				</div>	
+	</section>			
+	<section>	
+			<div class="div-head">Distribute space</div>
+				<div class="div-child">
+					<ul>
+						<li>justify-content: flex-start</li>
+						<li>justify-content: flex-end</li>
+						<li>justify-content: center</li>
+						<li>justify-content: space-between</li>
+						<li>justify-content: space-around</li>
+						<li>justify-content: space-evenly</li>
+					</ul>
+				</div>	
+	</section>				
+	
+	<section>	
+			<div class="div-head">Align with more than one line</div>
+				<div class="div-child">
+					<ul>
+						<li>align-content: flex-start</li>
+						<li>align-content: flex-end</li>
+						<li>align-content: center</li>
+						<li>align-content: space-between</li>
+						<li>align-content: space-around</li>
+						<li>align-content: stretch</li>
+					</ul>
+				</div>	
 	</section>	
-</main>
+
+	<section class="special-section">
+		<div class="div-head">Children</div>
+				<div class="div-child">
+					<ul>
+						<li>order: integer</li>
+						<li>flex-grow: 1 (all)</li>
+						<li>flex-grow (1,2, and 3)</li>
+						<li>flex-basis: 20%</li>
+						<li>flex-basis: 40%</li>
+						<li>flex-shrink: 2</li>
+						<li>align-self: flex-end</li>
+					</ul>
+				</div>	
+	</section>
+
+<section class="vertical">
+GRID
+</section>
+
+	<section>
+	
+			<div class="div-head">Enable grid for children</div>
+				<div class="div-child">
+					<ul>
+						<li>display: grid</li>
+						<li>display: inline-grid</li>
+						<li>display: subgrid</li>
+					</ul>
+				</div>
+				<div class="div-head">Define rows/columns</div>
+				<div class="div-child">
+					<ul>
+						<li>grid-template-columns: 12px repeat(3, 12px)</li>
+						<li>grid-template-rows: 8px auto 22%</li>
+					</ul>
+				
+				</div>
+	</section>
+	
+	<section>
+			<div class="div-head">Grid gaps</div>
+				<div class="div-child">
+					<ul>
+						<li>grid-row-gap: 1px</li>
+						<li>grid-column-gap: 4px</li>
+						<li>grid-gap: 6px</li>
+						
+					</ul>
+				
+				
+				</div>
+				<div class="div-head">Justify (h)</div>
+				<div class="div-child">
+					<ul>
+						<li>justify-items: start</li>
+						<li>justify-items: end</li>
+						<li>justify-items: center</li>
+						<li>justify-items: stretch(default)</li>
+						
+					</ul>
+				</div>	
+	</section>			
+	<section>	
+			<div class="div-head">Align (v)</div>
+				<div class="div-child">
+					<ul>
+						<li>align-items: start</li>
+						<li>align-items: end</li>
+						<li>align-items: center</li>
+						<li>align-items: stretch(default)</li>
+						
+					</ul>
+				</div>	
+				<div class="div-head">Auto</div>
+				<div class="div-child">
+					<ul>
+						<li>grid-auto-flow: row</li>
+						<li>grid-auto-flow: column</li>
+						<li>grid-auto-flow: dense</li>
+						
+					</ul>
+				</div>	
+	</section>				
+	
+	<section>	
+			<div class="div-head">Justify (small grid (h))</div>
+				<div class="div-child">
+					<ul>
+						<li>justify-content: start</li>
+						<li>justify-content: end</li>
+						<li>justify-content: center</li>
+						<li>justify-content: stretch</li>
+						<li>justify-content: space-around</li>
+						<li>justify-content: space-between</li>
+						<li>justify-content: space-evenly</li>
+						
+					</ul>
+				</div>	
+	</section>	
+
+	<section>
+		<div class="div-head">Align (small grid (v)</div>
+				<div class="div-child">
+					<ul>
+						<li>align-content: start</li>
+						<li>align-content: end</li>
+						<li>align-content: center</li>
+						<li>align-content: stretch</li>
+						<li>align-content: space-around</li>
+						<li>align-content: space-between</li>
+						<li>align-content: space-evenly</li>
+						
+					</ul>
+				</div>	
+				
+	</section>
+	
+	
+</div>
 
 
-<footer></footer>
+	
+
 
 </body>
 </html>
