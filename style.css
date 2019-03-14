@@ -7,8 +7,9 @@ body {
 
 .content-section {
 	display: grid;
-	grid-template-columns:  10px repeat(5, 1fr);
-	grid-gap: 3px;
+	grid-template-columns:  15px repeat(5, 1fr);
+	grid-gap: 2px;
+	
 	
 }
 
@@ -23,6 +24,7 @@ section {
 	padding: 3px;
 	font-size: 1em;
 	font-family: 'Roboto', sans-serif;
+	box-shadow: 5px 10px #222;
 	
 }
 
@@ -30,11 +32,14 @@ section {
 .vertical{
     width:1em;
     word-wrap: break-word;
-    font-family: monospace; /* this is just for good looks */
+    font-family: monospace;  
 	border: none;
-	background-color: #222;
-	color: teal;
+	background-color: teal;
+	color: #fff;
 	font-size: 1.5em;
+	align-self: center;
+	box-shadow: none;
+	
 	
 }
 
@@ -47,30 +52,53 @@ section {
 
 .div-head {
 	font-size: 1em;
-	color: #EAEAEB;
+	color: teal;
+	background-color: #222;
+	padding: 10px;
 }
 
-.div-child {
-	background-color: #222;
+.cell {
+	display:flex;
+	
+	flex-direction: column;
+	justify-content: center;
 	font-size: 1em;
+	line-height: 1em;
+	padding: 2px;
+	
+
 	
 }
 
 
 
-
-li {
-	list-style: none;
+.child-item {
+	
 	text-align: left;
-	color: gray;
-	padding: 5px;
+	padding: 3px;
+	align-items: center;
+	justify-content: left;
 }
 
-li:hover {
+.child-item:hover {
+
+	background-color: #333;
 	color: #fff;
-	background-color: #000;
 	cursor: pointer;
 }
 
 
 
+div > svg {
+	width: 20px;
+	height: 20px;
+	border: 1px solid gray;
+	margin: 10px;
+	
+	
+}
+
+.display-flex {
+	fill: green;
+	
+}
