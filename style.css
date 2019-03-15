@@ -7,7 +7,7 @@ body {
 
 .content-section {
 	display: grid;
-	grid-template-columns:  15px repeat(5, 1fr);
+	grid-template-columns:  15px repeat(6, 1fr);
 	grid-gap: 2px;
 	
 	
@@ -16,13 +16,13 @@ body {
 
 section {
 	width: 90%;
-	margin: 10px auto;
+	margin: 5px auto;
 	text-align: center;
 	color: #D9D9DA;
 	border: 2px solid gray;
-	border-radius: 15px;
-	padding: 3px;
-	font-size: 1em;
+	
+	
+	font-size: .9em;
 	font-family: 'Roboto', sans-serif;
 	box-shadow: 5px 10px #222;
 	
@@ -52,32 +52,35 @@ section {
 
 .div-head {
 	font-size: 1em;
-	color: teal;
+	color: #57FF00;
+	opacity: 0.8;
 	background-color: #222;
 	padding: 10px;
+	
 }
 
 .cell {
 	display:flex;
-	
 	flex-direction: column;
 	justify-content: center;
 	font-size: 1em;
 	line-height: 1em;
 	padding: 2px;
+	margin: 0 auto;
 	
-
 	
 }
 
 
 
 .child-item {
-	
+	width: 100%;
 	text-align: left;
-	padding: 3px;
-	align-items: center;
-	justify-content: left;
+	vertical-align: center;
+	
+	line-height: 100%;
+	
+	
 }
 
 .child-item:hover {
@@ -85,6 +88,7 @@ section {
 	background-color: #333;
 	color: #fff;
 	cursor: pointer;
+	
 }
 
 
@@ -94,11 +98,24 @@ div > svg {
 	height: 20px;
 	border: 1px solid gray;
 	margin: 10px;
-	
+
 	
 }
 
 .display-flex {
-	fill: green;
-	
+	fill: #20EFC8;
+}
+
+
+.display-flex-alternate {
+	fill: #57FF00;
+	opacity: 0.9;
+}
+
+.display-grid {
+	fill: #7DB261;
+}
+
+.display-grid-alternate {
+	fill: #7DB261;
 }

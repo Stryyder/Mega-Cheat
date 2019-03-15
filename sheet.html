@@ -14,61 +14,66 @@ FLEX
 
 	<section>
 	
-			<div class="div-head">Enable flex for children</div>
+			<div class="div-head">display:</div>
 				<div class="cell">
-					<div class="child-item"><svg><use href="#hor"></use></svg>display: flex</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>flex</div>
 					
-					<div class="child-item"><svg><use href="#hor"></use></svg>display: inline-flex</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>inline-flex</div>
 				</div>
 				
-			<div class="div-head">Establish main axis</div>
+			<div class="div-head">flex-direction:</div>
 				<div class="cell">
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-direction: row</div>
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-direction: row-reverse</div>
-					<div class="child-item"><svg><use href="#vert"></use></svg>flex-direction: column</div>
-					<div class="child-item"><svg><use href="#vert"></use></svg>flex-direction: column-reverse</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>row</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>row-reverse</div>
+					<div class="child-item"><svg><use href="#vert"></use></svg>column</div>
+					<div class="child-item"><svg><use href="#vert"></use></svg>column-reverse</div>
 				</div>
 	</section>
 	
 	<section>
-			<div class="div-head">Wrap items</div>
+			<div class="div-head">flex-wrap:</div>
 				<div class="cell">
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-wrap: nowrap</div>
-					<div class="child-item">flex-wrap: wrap</div>
-					<div class="child-item">flex-wrap: wrap-reverse</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>nowrap</div>
+					<div class="child-item"><svg><use href="#flex-wrap"></use></svg>wrap</div>
+					<div class="child-item"><svg><use href="#flex-wrap-reverse"></use></svg>wrap-reverse</div>
 				</div>
 				
-				<div class="div-head">Cross axis layout</div>
-				<div class="cell">
-					<div class="child-item">align-items: flex-start</div>
-					<div class="child-item">align-items: flex-end</div>
-					<div class="child-item">align-items: center</div>
-					<div class="child-item">align-items: baseline</div>
-					<div class="child-item">align-items: stretch</div>
-				</div>
+				
 	</section>			
 	
-	<section>	
-			<div class="div-head">Distribute space</div>
+	<section>
+			<div class="div-head">align-items: (cross-axis)</div>
 				<div class="cell">
-					<div class="child-item">justify-content: flex-start</div>
-					<div class="child-item">justify-content: flex-end</div>
-					<div class="child-item">justify-content: center</div>
-					<div class="child-item">justify-content: space-between</div>
-					<div class="child-item">justify-content: space-around</div>
-					<div class="child-item">justify-content: space-evenly</div>
+					<div class="child-item"><svg><use href="#align-items-flex-start"></use></svg>flex-start</div>
+					<div class="child-item"><svg><use href="#align-items-flex-end"></use></svg>flex-end</div>
+					<div class="child-item"><svg><use href="#align-items-flex-center"></use></svg>center</div>
+					<div class="child-item"><svg><use href="#align-items-flex-start"></use></svg>baseline</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>stretch</div>
 				</div>	
+	</section>
+	
+	<section>	
+			<div class="div-head">justify-content:</div>
+				<div class="cell">
+					<div class="child-item"><svg><use href="#flex-start"></use></svg>flex-start</div>
+					<div class="child-item"><svg><use href="#flex-end"></use></svg>flex-end</div>
+					<div class="child-item"><svg><use href="#justify-content-center"></use></svg>center</div>
+					<div class="child-item"><svg><use href="#justify-content-space-between"></use></svg>space-between</div>
+					<div class="child-item"><svg><use href="#justify-content-space-around"></use></svg>space-around</div>
+					<div class="child-item"><svg><use href="#justify-content-space-evenly"></use></svg>space-evenly</div>
+				</div>
+				
 	</section>				
 	
 	<section>	
-			<div class="div-head">Align with more than one line</div>
+			<div class="div-head">align-content: (multiline)</div>
 				<div class="cell">
-					<div class="child-item">align-content: flex-start</div>
-					<div class="child-item">align-content: flex-end</div>
-					<div class="child-item">align-content: center</div>
-					<div class="child-item">align-content: space-between</div>
-					<div class="child-item">align-content: space-around</div>
-					<div class="child-item">align-content: stretch</div>
+					<div class="child-item"><svg><use href="#align-content-flex-start"></use></svg>flex-start</div>
+					<div class="child-item"><svg><use href="#align-content-flex-end"></use></svg>flex-end</div>
+					<div class="child-item"><svg><use href="#align-content-flex-center"></use></svg>center</div>
+					<div class="child-item"><svg><use href="#align-content-flex-space-between"></use></svg>space-between</div>
+					<div class="child-item"><svg><use href="#align-content-flex-space-around"></use></svg>space-around</div>
+					<div class="child-item"><svg><use href="#align-content-stretch"></use></svg>stretch</div>
 				</div>
 				
 	</section>	
@@ -76,13 +81,13 @@ FLEX
 	<section class="special-section">
 		<div class="div-head">Children</div>
 				<div class="cell">
-					<div class="child-item">order: integer</div>
-					<div class="child-item">flex-grow: 1 (all)</div>
-					<div class="child-item">flex-grow (1,2, and 3)</div>
-					<div class="child-item">flex-basis: 20%</div>
-					<div class="child-item">flex-basis: 40%</div>
-					<div class="child-item">flex-shrink: 2</div>
-					<div class="child-item">align-self: flex-end</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>order: integer</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>flex-grow: 1 (all)</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>flex-grow (1,2, and 3)</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>flex-basis: 20%</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>flex-basis: 40%</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>flex-shrink: 2</div>
+					<div class="child-item"><svg><use href="#hor"></use></svg>align-self: flex-end</div>
 				</div>	
 	</section>
 
@@ -91,14 +96,14 @@ GRID
 </section>
 
 	<section>
-		<div class="div-head">Enable grid for children</div>
+		<div class="div-head">display</div>
 				<div class="cell">
-					<div class="child-item">display: grid</div>
-					<div class="child-item">display: inline-grid</div>
-					<div class="child-item">display: subgrid</div>
+					<div class="child-item">grid</div>
+					<div class="child-item">inline-grid</div>
+					<div class="child-item">subgrid</div>
 				</div>
 		
-		<div class="div-head">Define rows/columns</div>
+		<div class="div-head">rows/columns</div>
 				<div class="cell">
 					<div class="child-item">grid-template-columns: 12px repeat(3, 12px)</div>
 					<div class="child-item">grid-template-rows: 8px auto 22%</div>
@@ -114,22 +119,22 @@ GRID
 				</div>
 				
 				
-			<div class="div-head">Justify (h)</div>
+			<div class="div-head">justify-items (h)</div>
 				<div class="cell">
-					<div class="child-item">justify-items: start</div>
-					<div class="child-item">justify-items: end</div>
-					<div class="child-item">justify-items: center</div>
-					<div class="child-item">justify-items: stretch(default)</div>
+					<div class="child-item">start</div>
+					<div class="child-item">end</div>
+					<div class="child-item">center</div>
+					<div class="child-item">stretch(default)</div>
 				</div>	
 	</section>
 	
 	<section>	
-			<div class="div-head">Align (v)</div>
+			<div class="div-head">align-items (v)</div>
 				<div class="cell">
-					<div class="child-item">align-items: start</div>
-					<div class="child-item">align-items: end</div>
-					<div class="child-item">align-items: center</div>
-					<div class="child-item">align-items: stretch(default)</div>
+					<div class="child-item">start</div>
+					<div class="child-item">end</div>
+					<div class="child-item">center</div>
+					<div class="child-item">stretch(default)</div>
 				</div>	
 				
 			<div class="div-head">Auto</div>
@@ -141,28 +146,28 @@ GRID
 	</section>				
 	
 	<section>	
-			<div class="div-head">Justify (small grid (h))</div>
+			<div class="div-head">justify-content (small grid (h))</div>
 				<div class="cell">
-					<div class="child-item">justify-content: start</div>
-					<div class="child-item">justify-content: end</div>
-					<div class="child-item">justify-content: center</div>
-					<div class="child-item">justify-content: stretch</div>
-					<div class="child-item">justify-content: space-around</div>
-					<div class="child-item">justify-content: space-between</div>
-					<div class="child-item">justify-content: space-evenly</div>
+					<div class="child-item">start</div>
+					<div class="child-item">end</div>
+					<div class="child-item">center</div>
+					<div class="child-item">stretch</div>
+					<div class="child-item">space-around</div>
+					<div class="child-item">space-between</div>
+					<div class="child-item">space-evenly</div>
 				</div>	
 	</section>	
 
 	<section>
-		<div class="div-head">Align (small grid (v))</div>
+		<div class="div-head">align-content (small grid (v))</div>
 				<div class="cell">
-					<div class="child-item">align-content: start</div>
-					<div class="child-item">align-content: end</div>
-					<div class="child-item">align-content: center</div>
-					<div class="child-item">align-content: stretch</div>
-					<div class="child-item">align-content: space-around</div>
-					<div class="child-item">align-content: space-between</div>
-					<div class="child-item">align-content: space-evenly</div>
+					<div class="child-item">start</div>
+					<div class="child-item">end</div>
+					<div class="child-item">center</div>
+					<div class="child-item">stretch</div>
+					<div class="child-item">space-around</div>
+					<div class="child-item">space-between</div>
+					<div class="child-item">space-evenly</div>
 				</div>	
 				
 	</section>
@@ -177,6 +182,85 @@ GRID
 	<symbol id="vert" viewBox="0 0 20 20">
 		<path class="display-flex" d="M2 2h16v2H2z M2 6h16v2H2z M2 10h16v2H2z M2 14h16v2H2z "/>
 	</symbol>
+	
+	<symbol id="flex-wrap" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z"/>
+		<path class="display-flex-alternate" d="M3 12h2v8H3z M7 12h2v8H7z"/>
+	</symbol>
+	<symbol id="flex-wrap-reverse" viewBox="0 0 20 20">
+		<path class="display-flex-alternate" d="M3 2h2v8H3z M7 2h2v8H7z"/>
+		<path class="display-flex" d="M3 12h2v8H3z M7 12h2v8H7z M11 12h2v8H11z M15 12h2v8H15z"/>
+	</symbol>
+	
+	<symbol id="flex-start" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v16H3z M7 2h2v16H7z M11 2h2v16H11z"/>
+	</symbol>
+	
+	<symbol id="flex-end" viewBox="0 0 20 20">
+		<path class="display-flex" d="M7 2h2v16H7z M11 2h2v16H11z M15 2h2v16H15z"/>
+	</symbol>
+	
+	<symbol id="justify-content-center" viewBox="0 0 20 20">
+		<path class="display-flex" d="M7 2h2v16H7z M11 2h2v16H11z"/>
+	</symbol>
+	
+	<symbol id="justify-content-space-between" viewBox="0 0 20 20">
+		<path class="display-flex" d="M2 2h2v16H2z M9 2h2v16H9z M16 2h2v16H16z"/>
+	</symbol>
+	
+	<symbol id="justify-content-space-around" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
+	</symbol>
+	
+	<symbol id="justify-content-space-evenly" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
+	</symbol>
+	
+	<symbol id="align-items-flex-start" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v6H3z M7 2h2v6H7z M11 2h2v6H11z M15 2h2v6H15z"/>
+	</symbol>
+	
+	<symbol id="align-items-flex-end" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 12h2v16H3z M7 12h2v16H7z M11 12h2v16H11z M15 12h2v16H15z"/>
+	</symbol>
+	
+	<symbol id="align-items-flex-center" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 6h2v10H3z M7 6h2v10H7z M11 6h2v10H11z M15 6h2v10H15z"/>
+	</symbol>
+	
+	<symbol id="align-content-flex-start" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v4H3z M7 2h2v4H7z M11 2h2v4H11z M15 2h2v4H15z" />
+		<path class="display-flex-alternate" d="M3 8h2v4H3z M7 8h2v4H7z"/>
+	</symbol>
+	
+	<symbol id="align-content-flex-end" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 10h2v4H3z M7 10h2v4H7z M11 10h2v4H11z M15 10h2v4H15z" />
+		<path class="display-flex-alternate" d="M3 16h2v4H3z M7 16h2v4H7z"/>
+	</symbol>
+	
+	<symbol id="align-content-flex-center" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 5h2v4H3z M7 5h2v4H7z M11 5h2v4H11z M15 5h2v4H15z" />
+		<path class="display-flex-alternate" d="M3 11h2v4H3z M7 11h2v4H7z"/>
+	</symbol>
+	
+	<symbol id="align-content-flex-space-between" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v4H3z M7 2h2v4H7z M11 2h2v4H11z M15 2h2v4H15z" />
+		<path class="display-flex-alternate" d="M3 16h2v4H3z M7 16h2v4H7z"/>
+		
+	</symbol>
+	
+	<symbol id="align-content-flex-space-around" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 4h2v4H3z M7 4h2v4H7z M11 4h2v4H11z M15 4h2v4H15z" />
+		<path class="display-flex-alternate" d="M3 11h2v4H3z M7 11h2v4H7z"/>
+		
+	</symbol>
+	
+	<symbol id="align-content-stretch" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z" />
+		<path class="display-flex-alternate" d="M3 11h2v8H3z M7 11h2v8H7z"/>
+	</symbol>
+	
+	
 </svg>
 
 </body>
