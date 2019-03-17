@@ -82,12 +82,11 @@ FLEX
 		<div class="div-head">Children</div>
 				<div class="cell">
 					<div class="child-item"><svg><use href="#hor"></use></svg>order: integer</div>
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-grow: 1 (all)</div>
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-grow (1,2, and 3)</div>
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-basis: 20%</div>
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-basis: 40%</div>
-					<div class="child-item"><svg><use href="#hor"></use></svg>flex-shrink: 2</div>
-					<div class="child-item"><svg><use href="#hor"></use></svg>align-self: flex-end</div>
+					<div class="child-item"><svg><use href="#flex-grow1"></use></svg>flex-grow: 1 (all)</div>
+					<div class="child-item"><svg><use href="#flex-grow123"></use></svg>flex-grow (1,2, and 3)</div>
+					<div class="child-item"><svg><use href="#flex-basis"></use></svg>flex-basis: 20% 40%</div>
+					<div class="child-item"><svg><use href="#flex-shrink"></use></svg>flex-shrink: 2</div>
+					<div class="child-item"><svg><use href="#align-self"></use></svg>align-self: flex-end (3rd)</div>
 				</div>	
 	</section>
 
@@ -259,7 +258,21 @@ GRID
 		<path class="display-flex" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z" />
 		<path class="display-flex-alternate" d="M3 11h2v8H3z M7 11h2v8H7z"/>
 	</symbol>
-	
+	<symbol id="flex-grow1" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h4v16H3z M8 2h4v16H8z M13 2h4v16H13z"/>
+	</symbol>
+	<symbol id="flex-grow123" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v16H3z M7 2h4v16H7z M12 2h6v16H12z"/>
+	</symbol>
+	<symbol id="flex-basis" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v16H3z M7 2h4v16H7z"/>
+	</symbol>
+	<symbol id="flex-shrink" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h8v16H3z M13 2h4v16H13z"/>
+	</symbol>
+	<symbol id="align-self" viewBox="0 0 20 20">
+		<path class="display-flex" d="M3 2h2v6H3z M7 2h2v6H7z M11 11h2v6H11z M15 2h2v6H15z"/>
+	</symbol>
 	
 </svg>
 
