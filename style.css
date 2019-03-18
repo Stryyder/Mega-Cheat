@@ -29,6 +29,7 @@ section {
 }
 
 
+
 .vertical{
     width:1em;
     word-wrap: break-word;
@@ -51,7 +52,7 @@ section {
 
 
 .div-head {
-	font-size: 1em;
+	font-size: 1.5em;
 	color: #57FF00;
 	opacity: 0.8;
 	background-color: #222;
@@ -70,7 +71,12 @@ section {
 	
 	
 }
-
+.cell:hover {
+	background-color: #EAEAEB;
+	color: #222;
+	
+	
+}
 
 
 .child-item {
@@ -85,8 +91,9 @@ section {
 
 .child-item:hover {
 
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: blue;
+	font-weight: bold;
 	cursor: pointer;
 	
 }
@@ -98,6 +105,7 @@ div > svg {
 	height: 20px;
 	border: 1px solid gray;
 	margin: 10px;
+	background-color: #000;
 
 	
 }
