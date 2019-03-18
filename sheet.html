@@ -102,10 +102,12 @@ GRID
 					<div class="child-item"><svg><use href="#vert"></use></svg>subgrid</div>
 				</div>
 		
-		<div class="div-head">rows/columns</div>
+		<div class="div-head">grid-template</div>
 				<div class="cell">
-					<div class="child-item">grid-template-columns: 12px repeat(3, 12px)</div>
-					<div class="child-item">grid-template-rows: 8px auto 22%</div>
+					<div class="child-item"><svg><use href="#nineBoxes"></use></svg>columns: 12px 12px 12px </br>(repeat (3, 12px)</div>
+					<div class="child-item"><svg><use href="#nineBoxes"></use></svg>rows: 12px 12px 12px</div>
+					<div class="child-item"><svg><use href="#nineBoxesSized"></use></svg>c: 8px auto 8px, r: 8px auto 8px</div>
+					
 				</div>
 	</section>
 	
@@ -209,110 +211,209 @@ Git
 					<div class="child-item">git push</div>
 				</div>	
 	</section>
-
+	<section>
+		additional git info
+	</section>
+	<section>
+		additional git info
+	</section>
+	<section>
+		additional git info
+	</section>
 	
+	<section class="vertical">
+		RegExp
+	</section>
+	
+	<section>
+		<div class="div-head">Modifiers</div>
+				<div class="cell">
+					<div class="child-item">g - global match</div>
+					<div class="child-item">i - case-insensitive</div>
+					<div class="child-item">m - multiline</div>
+				</div>	
+		<div class="div-head">Brackets</div>
+				<div class="cell">
+					<div class="child-item">[abc] - any char between</div>
+					<div class="child-item">[^abc] - any char NOT between</div>
+					<div class="child-item">[0-9] - any digit</div>
+					<div class="child-item">[x|y] - any alternative listed</div>
+				</div>
+	</section>
+	<section>
+		<div class="div-head">Meta</div>
+				<div class="cell">
+					<div class="child-item">. - single char (- newline or line terminator)</div>
+					<div class="child-item">\w - word</div>
+					<div class="child-item">\W - non-word</div>
+					<div class="child-item">\d \D - digits</div>
+					<div class="child-item">\s \S - whitespace</div>
+					<div class="child-item">\b \B - beginning</div>
+					<div class="child-item">\0 - NUL</div>
+					<div class="child-item">\n \f \r - new line \ form feed \ carriage return</div>
+					<div class="child-item">\t \v - tab \ vertical tab</div>
+					<div class="child-item">\xxx - char by octal num xxx</div>
+					<div class="child-item">\xdd - hex</div>
+					<div class="child-item">\uxxxx - unicode</div>
+		</div>
+	</section>
+	<section>
+		<div class="div-head">Quantifier</div>
+				<div class="cell">
+					<div class="child-item">n+ - at least one n</div>
+					<div class="child-item">n* - zero or more n</div>
+					<div class="child-item">n? - zero or one n</div>
+					<div class="child-item">n{X} - sequence of X n's</div>
+					<div class="child-item">n{X,Y} - sequence X to Y n's</div>
+					<div class="child-item">n{X,} - sequence at least X n's</div>
+					<div class="child-item">n$ - n at end</div>
+					<div class="child-item">^n - n at start</div>
+					<div class="child-item">?=n - followed by n</div>
+					<div class="child-item">?!n - not followed by n</div>
+					
+		</div>
+	</section>
+		<section>
+		additional regExp info
+	</section>
+	<section>
+		additional regExp info
+	</section>
+	<section>
+		additional regExp info
+	</section>
 	
 </div>
 
+<div id="scratchpad">
+If the cube is directly inside the container:
+
+#container:hover > #cube { background-color: yellow; }
+If cube is next to (after containers closing tag) the container:
+
+#container:hover + #cube { background-color: yellow; }
+If the cube is somewhere inside the container:
+
+#container:hover #cube { background-color: yellow; }
+If the cube is a sibling of the container:
+
+#container:hover ~ #cube { background-color: yellow; }
+
+</div>
+
+
 <svg xmlns="http://www.w3.org/2000/svg" >
 	<symbol id="hor" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v16H3z M7 2h2v16H7z M11 2h2v16H11z M15 2h2v16H15z"/>
+		<path class="svg-block" d="M3 2h2v16H3z M7 2h2v16H7z M11 2h2v16H11z M15 2h2v16H15z"/>
 	</symbol>
 	<symbol id="vert" viewBox="0 0 20 20">
-		<path class="display-flex" d="M2 2h16v2H2z M2 6h16v2H2z M2 10h16v2H2z M2 14h16v2H2z "/>
+		<path class="svg-block" d="M2 2h16v2H2z M2 6h16v2H2z M2 10h16v2H2z M2 14h16v2H2z "/>
 	</symbol>
 	
 	<symbol id="flex-wrap" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z"/>
-		<path class="display-flex-alternate" d="M3 12h2v8H3z M7 12h2v8H7z"/>
+		<path class="svg-block" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z"/>
+		<path class="svg-block-alternate" d="M3 12h2v8H3z M7 12h2v8H7z"/>
 	</symbol>
 	<symbol id="flex-wrap-reverse" viewBox="0 0 20 20">
-		<path class="display-flex-alternate" d="M3 2h2v8H3z M7 2h2v8H7z"/>
-		<path class="display-flex" d="M3 12h2v8H3z M7 12h2v8H7z M11 12h2v8H11z M15 12h2v8H15z"/>
+		<path class="svg-block-alternate" d="M3 2h2v8H3z M7 2h2v8H7z"/>
+		<path class="svg-block" d="M3 12h2v8H3z M7 12h2v8H7z M11 12h2v8H11z M15 12h2v8H15z"/>
 	</symbol>
 	
 	<symbol id="flex-start" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v16H3z M7 2h2v16H7z M11 2h2v16H11z"/>
+		<path class="svg-block" d="M3 2h2v16H3z M7 2h2v16H7z M11 2h2v16H11z"/>
 	</symbol>
 	
 	<symbol id="flex-end" viewBox="0 0 20 20">
-		<path class="display-flex" d="M7 2h2v16H7z M11 2h2v16H11z M15 2h2v16H15z"/>
+		<path class="svg-block" d="M7 2h2v16H7z M11 2h2v16H11z M15 2h2v16H15z"/>
 	</symbol>
 	
 	<symbol id="justify-content-center" viewBox="0 0 20 20">
-		<path class="display-flex" d="M7 2h2v16H7z M11 2h2v16H11z"/>
+		<path class="svg-block" d="M7 2h2v16H7z M11 2h2v16H11z"/>
 	</symbol>
 	
 	<symbol id="justify-content-space-between" viewBox="0 0 20 20">
-		<path class="display-flex" d="M2 2h2v16H2z M9 2h2v16H9z M16 2h2v16H16z"/>
+		<path class="svg-block" d="M2 2h2v16H2z M9 2h2v16H9z M16 2h2v16H16z"/>
 	</symbol>
 	
 	<symbol id="justify-content-space-around" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
+		<path class="svg-block" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
 	</symbol>
 	
 	<symbol id="justify-content-space-evenly" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
+		<path class="svg-block" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
 	</symbol>
 	
 	<symbol id="align-items-flex-start" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v6H3z M7 2h2v6H7z M11 2h2v6H11z M15 2h2v6H15z"/>
+		<path class="svg-block" d="M3 2h2v6H3z M7 2h2v6H7z M11 2h2v6H11z M15 2h2v6H15z"/>
 	</symbol>
 	
 	<symbol id="align-items-flex-end" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 12h2v16H3z M7 12h2v16H7z M11 12h2v16H11z M15 12h2v16H15z"/>
+		<path class="svg-block" d="M3 12h2v16H3z M7 12h2v16H7z M11 12h2v16H11z M15 12h2v16H15z"/>
 	</symbol>
 	
 	<symbol id="align-items-flex-center" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 6h2v10H3z M7 6h2v10H7z M11 6h2v10H11z M15 6h2v10H15z"/>
+		<path class="svg-block" d="M3 6h2v10H3z M7 6h2v10H7z M11 6h2v10H11z M15 6h2v10H15z"/>
 	</symbol>
 	
 	<symbol id="align-content-flex-start" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v4H3z M7 2h2v4H7z M11 2h2v4H11z M15 2h2v4H15z" />
-		<path class="display-flex-alternate" d="M3 8h2v4H3z M7 8h2v4H7z"/>
+		<path class="svg-block" d="M3 2h2v4H3z M7 2h2v4H7z M11 2h2v4H11z M15 2h2v4H15z" />
+		<path class="svg-block-alternate" d="M3 8h2v4H3z M7 8h2v4H7z"/>
 	</symbol>
 	
 	<symbol id="align-content-flex-end" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 10h2v4H3z M7 10h2v4H7z M11 10h2v4H11z M15 10h2v4H15z" />
-		<path class="display-flex-alternate" d="M3 16h2v4H3z M7 16h2v4H7z"/>
+		<path class="svg-block" d="M3 10h2v4H3z M7 10h2v4H7z M11 10h2v4H11z M15 10h2v4H15z" />
+		<path class="svg-block-alternate" d="M3 16h2v4H3z M7 16h2v4H7z"/>
 	</symbol>
 	
 	<symbol id="align-content-flex-center" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 5h2v4H3z M7 5h2v4H7z M11 5h2v4H11z M15 5h2v4H15z" />
-		<path class="display-flex-alternate" d="M3 11h2v4H3z M7 11h2v4H7z"/>
+		<path class="svg-block" d="M3 5h2v4H3z M7 5h2v4H7z M11 5h2v4H11z M15 5h2v4H15z" />
+		<path class="svg-block-alternate" d="M3 11h2v4H3z M7 11h2v4H7z"/>
 	</symbol>
 	
 	<symbol id="align-content-flex-space-between" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v4H3z M7 2h2v4H7z M11 2h2v4H11z M15 2h2v4H15z" />
-		<path class="display-flex-alternate" d="M3 16h2v4H3z M7 16h2v4H7z"/>
+		<path class="svg-block" d="M3 2h2v4H3z M7 2h2v4H7z M11 2h2v4H11z M15 2h2v4H15z" />
+		<path class="svg-block-alternate" d="M3 16h2v4H3z M7 16h2v4H7z"/>
 		
 	</symbol>
 	
 	<symbol id="align-content-flex-space-around" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 4h2v4H3z M7 4h2v4H7z M11 4h2v4H11z M15 4h2v4H15z" />
-		<path class="display-flex-alternate" d="M3 11h2v4H3z M7 11h2v4H7z"/>
+		<path class="svg-block" d="M3 4h2v4H3z M7 4h2v4H7z M11 4h2v4H11z M15 4h2v4H15z" />
+		<path class="svg-block-alternate" d="M3 11h2v4H3z M7 11h2v4H7z"/>
 		
 	</symbol>
 	
 	<symbol id="align-content-stretch" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z" />
-		<path class="display-flex-alternate" d="M3 11h2v8H3z M7 11h2v8H7z"/>
+		<path class="svg-block" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z" />
+		<path class="svg-block-alternate" d="M3 11h2v8H3z M7 11h2v8H7z"/>
 	</symbol>
 	<symbol id="flex-grow1" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h4v16H3z M8 2h4v16H8z M13 2h4v16H13z"/>
+		<path class="svg-block" d="M3 2h4v16H3z M8 2h4v16H8z M13 2h4v16H13z"/>
 	</symbol>
 	<symbol id="flex-grow123" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v16H3z M7 2h4v16H7z M12 2h6v16H12z"/>
+		<path class="svg-block" d="M3 2h2v16H3z M7 2h4v16H7z M12 2h6v16H12z"/>
 	</symbol>
 	<symbol id="flex-basis" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v16H3z M7 2h4v16H7z"/>
+		<path class="svg-block" d="M3 2h2v16H3z M7 2h4v16H7z"/>
 	</symbol>
 	<symbol id="flex-shrink" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h8v16H3z M13 2h4v16H13z"/>
+		<path class="svg-block" d="M3 2h8v16H3z M13 2h4v16H13z"/>
 	</symbol>
 	<symbol id="align-self" viewBox="0 0 20 20">
-		<path class="display-flex" d="M3 2h2v6H3z M7 2h2v6H7z M11 11h2v6H11z M15 2h2v6H15z"/>
+		<path class="svg-block" d="M3 2h2v6H3z M7 2h2v6H7z M11 11h2v6H11z M15 2h2v6H15z"/>
 	</symbol>
+	
+			<symbol id="nineBoxes">
+				<path class="svg-block" d="M1 2h5v5H1z M7 2h5v5H7z M13 2h5v5H13z"/>
+				<path class="svg-block-alternate" d="M1 8h5v5H1z M7 8h5v5H7z M13 8h5v5H13z"/>
+				<path class="svg-block" d="M1 14h5v5H1z M7 14h5v5H7z M13 14h5v5H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesSized" >
+				<path class="svg-block" d="M1 2h4v4H1z M6 2h8v4H6z M15 2h4v4H15z"/>
+				<path class="svg-block-alternate" d="M1 7h4v8H1z M6 7h8v8H6z M15 7h4v8H15z"/>
+				<path class="svg-block" d="M1 16h4v4H1z M6 16h8v4H6z M15 16h4v4H15z"/>
+				
+			</symbol>
 	
 </svg>
 
