@@ -221,17 +221,17 @@ GRID
 		<div class="div-head">display</div>
 				
 					<div class="cell">
-						<svg><use href="#vert"></use></svg>
+						<svg><use href="#vert2"></use></svg>
 						<div class="child-item">grid</div>
 					</div>	
 						
 					<div class="cell">
-						<svg><use href="#vert"></use></svg>
+						<svg><use href="#vert2"></use></svg>
 						<div class="child-item">inline-grid</div>
 					</div>	
 						
 					<div class="cell">
-						<svg><use href="#vert"></use></svg>
+						<svg><use href="#vert2"></use></svg>
 						<div class="child-item">subgrid</div>
 					</div>	
 						
@@ -259,35 +259,87 @@ GRID
 	<section>
 			<div class="div-head">Grid gaps</div>
 				
-					<div class="child-item">grid-row-gap: 1px</div>
-					<div class="child-item">grid-column-gap: 4px</div>
-					<div class="child-item">grid-gap: 6px</div>
+				<div class="cell">
+					<svg><use href="#nineBoxesSkinny"></use></svg>
+					<div class="child-item">grid-row-gap: 1px; grid-column-gap: 9px;</div>
+				</div>	
 				
+				<div class="cell">
+					<svg><use href="#nineBoxesSkinny"></use></svg>
+					<div class="child-item">grid-gap: 1px 9px;</div>
+				</div>
+				
+				<div class="cell">	
+					<svg><use href="#nineBoxesSmall"></use></svg>
+					<div class="child-item">grid-gap: 6px</div>
+				</div>
 				
 				
 			<div class="div-head">justify-items (h)</div>
 				
+				<div class="cell">	
+					<svg><use href="#nineBoxesSkinnyLeft"></use></svg>
 					<div class="child-item">start</div>
+				</div>
+					
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesSkinnyRight"></use></svg>	
 					<div class="child-item">end</div>
+				</div>
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesSkinny"></use></svg>	
 					<div class="child-item">center</div>
+				</div>
+				
+				<div class="cell">	
+					<svg><use href="#nineBoxes"></use></svg>	
 					<div class="child-item">stretch(default)</div>
+				</div>	
+					
 				
 	</section>
 	
 	<section>	
 			<div class="div-head">align-items (v)</div>
 				
+				<div class="cell">	
+					<svg><use href="#nineBoxesStart"></use></svg>	
 					<div class="child-item">start</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesEnd"></use></svg>		
 					<div class="child-item">end</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesCenter"></use></svg>		
 					<div class="child-item">center</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxes"></use></svg>		
 					<div class="child-item">stretch(default)</div>
+				</div>	
 					
 				
 			<div class="div-head">Auto</div>
-				
+				<div class="cell">	
+					<svg><use href="#auto-flow-row"></use></svg>	
 					<div class="child-item">grid-auto-flow: row</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#auto-flow-col"></use></svg>		
 					<div class="child-item">grid-auto-flow: column</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxes"></use></svg>		
 					<div class="child-item">grid-auto-flow: dense</div>
+				</div>
 				
 	</section>				
 	
@@ -331,7 +383,7 @@ git
 				
 					<div class="child-item">git init https://repositoryurl mydir</div>
 					<div class="child-item">git clone</div>
-					<div class="child-item">git-status</div>
+					<div class="child-item">git status</div>
 					<div class="child-item">git log -3</div>
 					<div class="child-item">git blame someFile.txt</div>
 					
@@ -537,6 +589,7 @@ If the cube is a sibling of the container:
 	<symbol id="flex-grow123" viewBox="0 0 20 20">
 		<path class="svg-block" d="M3 2h2v16H3z M7 2h4v16H7z M12 2h6v16H12z"/>
 	</symbol>
+	
 	<symbol id="flex-basis" viewBox="0 0 20 20">
 		<path class="svg-block" d="M3 2h2v16H3z M7 2h4v16H7z"/>
 	</symbol>
@@ -547,19 +600,75 @@ If the cube is a sibling of the container:
 		<path class="svg-block" d="M3 2h2v6H3z M7 2h2v6H7z M11 11h2v6H11z M15 2h2v6H15z"/>
 	</symbol>
 	
+			<symbol id="vert2" viewBox="0 0 20 20">
+			<path class="svg-block2" d="M2 2h16v2H2z M2 6h16v2H2z M2 10h16v2H2z M2 14h16v2H2z "/>
+			</symbol>
+	
 			<symbol id="nineBoxes">
-				<path class="svg-block" d="M1 2h5v5H1z M7 2h5v5H7z M13 2h5v5H13z"/>
-				<path class="svg-block-alternate" d="M1 8h5v5H1z M7 8h5v5H7z M13 8h5v5H13z"/>
-				<path class="svg-block" d="M1 14h5v5H1z M7 14h5v5H7z M13 14h5v5H13z"/>
+				<path class="svg-block2" d="M1 2h5v5H1z M7 2h5v5H7z M13 2h5v5H13z"/>
+				<path class="svg-block2-alternate" d="M1 8h5v5H1z M7 8h5v5H7z M13 8h5v5H13z"/>
+				<path class="svg-block2" d="M1 14h5v5H1z M7 14h5v5H7z M13 14h5v5H13z"/>
 			</symbol>
 			
 			<symbol id="nineBoxesSized" >
-				<path class="svg-block" d="M1 2h4v4H1z M6 2h8v4H6z M15 2h4v4H15z"/>
-				<path class="svg-block-alternate" d="M1 7h4v8H1z M6 7h8v8H6z M15 7h4v8H15z"/>
-				<path class="svg-block" d="M1 16h4v4H1z M6 16h8v4H6z M15 16h4v4H15z"/>
+				<path class="svg-block2" d="M1 2h4v4H1z M6 2h8v4H6z M15 2h4v4H15z"/>
+				<path class="svg-block2-alternate" d="M1 7h4v8H1z M6 7h8v8H6z M15 7h4v8H15z"/>
+				<path class="svg-block2" d="M1 16h4v4H1z M6 16h8v4H6z M15 16h4v4H15z"/>
 				
 			</symbol>
-	
+			
+			<symbol id="nineBoxesSkinny">
+				<path class="svg-block2" d="M3 2h2v5H3z M9 2h2v5H9z M15 2h2v5H15z"/>
+				<path class="svg-block2-alternate" d="M3 8h2v5H3z M9 8h2v5H9z M15 8h2v5H15z"/>
+				<path class="svg-block2" d="M3 14h2v5H3z M9 14h2v5H9z M15 14h2v5H15z"/>
+			</symbol>
+		
+			<symbol id="nineBoxesSmall">
+				<path class="svg-block2" d="M3 2h2v2H3z M9 2h2v2H9z M15 2h2v2H15z"/>
+				<path class="svg-block2-alternate" d="M3 8h2v2H3z M9 8h2v2H9z M15 8h2v2H15z"/>
+				<path class="svg-block2" d="M3 14h2v2H3z M9 14h2v2H9z M15 14h2v2H15z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesSkinnyLeft">
+				<path class="svg-block2" d="M1 2h2v5H1z M7 2h2v5H7z M13 2h2v5H13z"/>
+				<path class="svg-block2-alternate" d="M1 8h2v5H1z M7 8h2v5H7z M13 8h2v5H13z"/>
+				<path class="svg-block2" d="M1 14h2v5H1z M7 14h2v5H7z M13 14h2v5H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesSkinnyRight">
+				<path class="svg-block2" d="M5 2h2v5H5z M11 2h2v5H11z M17 2h2v5H17z"/>
+				<path class="svg-block2-alternate" d="M5 8h2v5H5z M11 8h2v5H11z M17 8h2v5H17z"/>
+				<path class="svg-block2" d="M5 14h2v5H5z M11 14h2v5H11z M17 14h2v5H17z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesStart">
+				<path class="svg-block2" d="M1 2h5v2H1z M7 2h5v2H7z M13 2h5v2H13z"/>
+				<path class="svg-block2-alternate" d="M1 8h5v2H1z M7 8h5v2H7z M13 8h5v2H13z"/>
+				<path class="svg-block2" d="M1 14h5v2H1z M7 14h5v2H7z M13 14h5v2H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesEnd">
+				<path class="svg-block2" d="M1 4h5v2H1z M7 4h5v2H7z M13 4h5v2H13z"/>
+				<path class="svg-block2-alternate" d="M1 10h5v2H1z M7 10h5v2H7z M13 10h5v2H13z"/>
+				<path class="svg-block2" d="M1 16h5v2H1z M7 16h5v2H7z M13 16h5v2H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesCenter">
+				<path class="svg-block2" d="M1 3h5v2H1z M7 3h5v2H7z M13 3h5v2H13z"/>
+				<path class="svg-block2-alternate" d="M1 9h5v2H1z M7 9h5v2H7z M13 9h5v2H13z"/>
+				<path class="svg-block2" d="M1 15h5v2H1z M7 15h5v2H7z M13 15h5v2H13z"/>
+			</symbol>
+			
+			<symbol id="auto-flow-row" viewBox="0 0 20 20">
+				<path class="svg-block2" d="M3 2h2v8H3z M7 2h2v8H7z M11 2h2v8H11z M15 2h2v8H15z"/>
+				<path class="svg-block2-alternate" d="M3 12h2v8H3z M7 12h2v8H7z"/>
+			</symbol>
+			<symbol id="auto-flow-col">
+				<path class="svg-block2" d="M1 2h5v5H1z M7 2h5v5H7z"/>
+				<path class="svg-block2-alternate" d="M1 8h5v5H1z M7 8h5v5H7z"/>
+				<path class="svg-block2" d="M1 14h5v5H1z"/>
+			</symbol>
+			
 </svg>
 
 </body>

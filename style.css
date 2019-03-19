@@ -9,6 +9,8 @@ body {
 	--main-svg-color: #20EFC8;
 	--alternate-svg-color: #57FF00;
 	--svg-bg: #000;
+	--alternate-svg2-color: #FFFC19;
+	--main-svg2-color: #FF530D;
 	--section-tab-color: #000;
 	--section-tab-bg: #EAEAEB;
 	
@@ -93,12 +95,11 @@ svg:hover {
 	 transform:scale(4);
 	 transition: 0.3s;
 	 
+	 
 }
 
 svg:hover + .child-item {
-	z-index: 1;
-	font-size: 1.5em;
-	
+	font-size: 1.1em;
 	text-align: right;
 }
 
@@ -120,10 +121,15 @@ div > svg {
 
 .svg-block-alternate {
 	fill: var(--alternate-svg-color);
-	
-	
 }
 
+.svg-block2 {
+	fill: var(--main-svg2-color);
+}
+
+.svg-block2-alternate {
+	fill: var(--alternate-svg2-color);
+}
 
 
 #scratchpad {
