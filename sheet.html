@@ -7,13 +7,18 @@
 <title>Mega Cheat sheet</title></head>
 <body>
 
-
+<nav>
+<a href="#flex-section">flexbox</a>
+<a href="#grid-section">grid</a>
+<a href="#git-section">git</a>
+<a href="#regex-section">regex</a>
+</nav>
 <div class="content-section">
 <section class="vertical">
 FLEX
 </section>
 
-	<section>
+	<section id="flex-section">
 	
 			<div class="div-head">display:</div>
 				
@@ -217,7 +222,7 @@ FLEX
 GRID
 </section>
 
-	<section>
+	<section id="grid-section">
 		<div class="div-head">display</div>
 				
 					<div class="cell">
@@ -346,26 +351,80 @@ GRID
 	<section>	
 			<div class="div-head">justify-content (small grid (h))</div>
 				
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownStart"></use></svg>	
 					<div class="child-item">start</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownEnd"></use></svg>		
 					<div class="child-item">end</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownCenter"></use></svg>		
 					<div class="child-item">center</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownStart"></use></svg>		
 					<div class="child-item">stretch</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#grid-space-around"></use></svg>		
 					<div class="child-item">space-around</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#grid-space-between"></use></svg>		
 					<div class="child-item">space-between</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#grid-space-evenly"></use></svg>		
 					<div class="child-item">space-evenly</div>
+				</div>
 					
 	</section>	
 
 	<section>
 		<div class="div-head">align-content (small grid (v))</div>
 				
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownStart"></use></svg>
 					<div class="child-item">start</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownBottom"></use></svg>	
 					<div class="child-item">end</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownVCenter"></use></svg>	
 					<div class="child-item">center</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledownStart"></use></svg>	
 					<div class="child-item">stretch</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledown-space-around"></use></svg>	
 					<div class="child-item">space-around</div>
+				</div>	
+					
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledown-space-between"></use></svg>	
 					<div class="child-item">space-between</div>
+				</div>
+				
+				<div class="cell">	
+					<svg><use href="#nineBoxesScaledown-space-evenly"></use></svg>
 					<div class="child-item">space-evenly</div>
+				</div>	
 					
 				
 	</section>
@@ -378,7 +437,7 @@ GRID
 git
 </section>
 
-	<section>
+	<section id="git-section">
 		<div class="div-head">New Project</div>
 				
 					<div class="child-item">git init https://repositoryurl mydir</div>
@@ -406,6 +465,7 @@ git
 					<div class="child-item">git checkout (switches)</div>
 					<div class="child-item">git reset --hard HEAD (discards)</div>
 					<div class="child-item">git push</div>
+					<div class="child-item"><a href="https://learngitbranching.js.org" target="_blank">Learn Branching</a></div>
 					
 	</section>
 	<section>
@@ -422,7 +482,7 @@ git
 		RegExp
 	</section>
 	
-	<section>
+	<section id="regex-section">
 		<div class="div-head">Modifiers</div>
 				
 					<div class="child-item">g - global match</div>
@@ -483,6 +543,8 @@ git
 </div>
 
 <div id="scratchpad">
+<div class="div-head">Scratchpad</div>
+
 If the cube is directly inside the container:
 
 #container:hover > #cube { background-color: yellow; }
@@ -495,6 +557,8 @@ If the cube is somewhere inside the container:
 If the cube is a sibling of the container:
 
 #container:hover ~ #cube { background-color: yellow; }
+
+svg layout inspired by: <a href= "http://grid.malven.co">malven</a>
 
 </div>
 
@@ -668,6 +732,67 @@ If the cube is a sibling of the container:
 				<path class="svg-block2-alternate" d="M1 8h5v5H1z M7 8h5v5H7z"/>
 				<path class="svg-block2" d="M1 14h5v5H1z"/>
 			</symbol>
+			
+			<symbol id="nineBoxesScaledownStart">
+				<path class="svg-block2 svg-scaledown" d="M1 2h5v5H1z M7 2h5v5H7z M13 2h5v5H13z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M1 8h5v5H1z M7 8h5v5H7z M13 8h5v5H13z"/>
+				<path class="svg-block2 svg-scaledown" d="M1 14h5v5H1z M7 14h5v5H7z M13 14h5v5H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesScaledownEnd">
+				<path class="svg-block2 svg-scaledown" d="M6 2h5v5H6z M12 2h5v5H12z M18 2h5v5H18z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M6 8h5v5H6z M12 8h5v5H12z M18 8h5v5H18z"/>
+				<path class="svg-block2 svg-scaledown" d="M6 14h5v5H6z M12 14h5v5H12z M18 14h5v5H18z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesScaledownCenter">
+				<path class="svg-block2 svg-scaledown" d="M4 2h5v5H4z M10 2h5v5H10z M16 2h5v5H16z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M4 8h5v5H4z M10 8h5v5H10z M16 8h5v5H16z"/>
+				<path class="svg-block2 svg-scaledown" d="M4 14h5v5H4z M10 14h5v5H10z M16 14h5v5H16z"/>
+			</symbol>
+			
+			<symbol id="grid-space-around" viewBox="0 0 20 20">
+				<path class="svg-block2" d="M2 2h2v16H2z M9 2h2v16H9z M16 2h2v16H16z"/>
+			</symbol>
+			
+			<symbol id="grid-space-between" viewBox="0 0 20 20">
+				<path class="svg-block2" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
+			</symbol>
+			
+			<symbol id="grid-space-evenly" viewBox="0 0 20 20">
+				<path class="svg-block2" d="M3 2h2v16H3z M9 2h2v16H9z M15 2h2v16H15z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesScaledownBottom">
+				<path class="svg-block2 svg-scaledown" d="M1 6h5v5H1z M7 6h5v5H7z M13 6h5v5H13z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M1 12h5v5H1z M7 12h5v5H7z M13 12h5v5H13z"/>
+				<path class="svg-block2 svg-scaledown" d="M1 18h5v5H1z M7 18h5v5H7z M13 18h5v5H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesScaledownVCenter">
+				<path class="svg-block2 svg-scaledown" d="M1 4h5v5H1z M7 4h5v5H7z M13 4h5v5H13z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M1 10h5v5H1z M7 10h5v5H7z M13 10h5v5H13z"/>
+				<path class="svg-block2 svg-scaledown" d="M1 16h5v5H1z M7 16h5v5H7z M13 16h5v5H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesScaledown-space-around">
+				<path class="svg-block2 svg-scaledown" d="M1 2h5v5H1z M7 2h5v5H7z M13 2h5v5H13z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M1 10h5v5H1z M7 10h5v5H7z M13 10h5v5H13z"/>
+				<path class="svg-block2 svg-scaledown" d="M1 18h5v5H1z M7 18h5v5H7z M13 18h5v5H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesScaledown-space-between">
+				<path class="svg-block2 svg-scaledown" d="M1 2h5v5H1z M7 2h5v5H7z M13 2h5v5H13z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M1 11h5v5H1z M7 11h5v5H7z M13 11h5v5H13z"/>
+				<path class="svg-block2 svg-scaledown" d="M1 20h5v5H1z M7 20h5v5H7z M13 20h5v5H13z"/>
+			</symbol>
+			
+			<symbol id="nineBoxesScaledown-space-evenly">
+				<path class="svg-block2 svg-scaledown" d="M1 3h5v5H1z M7 3h5v5H7z M13 3h5v5H13z"/>
+				<path class="svg-block2-alternate svg-scaledown" d="M1 10h5v5H1z M7 10h5v5H7z M13 10h5v5H13z"/>
+				<path class="svg-block2 svg-scaledown" d="M1 17h5v5H1z M7 17h5v5H7z M13 17h5v5H13z"/>
+			</symbol>
+			
 			
 </svg>
 
