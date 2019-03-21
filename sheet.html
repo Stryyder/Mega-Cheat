@@ -8,12 +8,14 @@
 <body>
 
 <nav>
-<a href="#flex-section">flexbox</a>
+<a href="#">flexbox</a>
 <a href="#grid-section">grid</a>
 <a href="#git-section">git</a>
 <a href="#regex-section">regex</a>
+<a href="#javascript-section">javascript</a>
+<a href="#scratchpad-section">scratchpad</a>
 </nav>
-<div class="content-section">
+<div class="content-section" >
 <section class="vertical">
 FLEX
 </section>
@@ -430,7 +432,9 @@ GRID
 	</section>
 	
 	<section>
-	additional grid info
+	<a href="https://adam-marsden.co.uk/css-cheat-sheet">CSS Cheat Sheet</a>
+	<a href="https://emilkowalski.github.io/css-effects-snippets/">Effect Snippets</a>
+	<a href="https://vgpena.github.io/using-css-grid-the-right-way/">Grid Right Way</a>
 	</section>
 
 <section class="vertical">
@@ -539,28 +543,77 @@ git
 	<section>
 		additional regExp info
 	</section>
+
+<section class="vertical">
+	js
+</section>
 	
-</div>
+	<section id="javascript-section">
+		<div class="div-head">splice()</div>
+			<div class="cell">	
+						<div class="child-item">arr.splice(index, howmany, additions)</div>
+			</div>	
+		<div class="div-head">slice()</div>
+			<div class="cell">	
+						<div class="child-item">arr.slice(start, end)</div>
+			</div>
+		
+		<div class="div-head">split()</div>
+			<div class="cell">	
+				<div class="child-item">string.split(separator, limit)</div>
+			</div>
+	
+	</section>
 
-<div id="scratchpad">
-<div class="div-head">Scratchpad</div>
+	<section>
+		additional js info
+	</section>
+	
+	<section>
+		additional js info
+	</section>
+	
+	<section>
+		additional js info
+	</section>
+	
+	<section>
+		additional js info
+	</section>
+	
+	<section>
+		additional js info
+	</section>
+	
+	
+<section class="vertical">
+	scratchpad
+</section>
+	
+	<section id="scratchpad-section">
+		<div class="div-head">Scratchpad</div>
+			<div class="cell">	
+				<div class="child-item">	If the cube is directly inside the container:
 
-If the cube is directly inside the container:
+					#container:hover > #cube { background-color: yellow; }
+					If cube is next to (after containers closing tag) the container:
 
-#container:hover > #cube { background-color: yellow; }
-If cube is next to (after containers closing tag) the container:
+					#container:hover + #cube { background-color: yellow; }
+					If the cube is somewhere inside the container:
 
-#container:hover + #cube { background-color: yellow; }
-If the cube is somewhere inside the container:
+					#container:hover #cube { background-color: yellow; }
+					If the cube is a sibling of the container:
 
-#container:hover #cube { background-color: yellow; }
-If the cube is a sibling of the container:
+					#container:hover ~ #cube { background-color: yellow; }
 
-#container:hover ~ #cube { background-color: yellow; }
+					svg layout inspired by: <a href= "http://grid.malven.co">malven</a>
+				</div>
+			</div>
+	</section>
+	
+</div>	
 
-svg layout inspired by: <a href= "http://grid.malven.co">malven</a>
 
-</div>
 
 
 <svg xmlns="http://www.w3.org/2000/svg" >

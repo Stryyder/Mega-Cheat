@@ -3,10 +3,10 @@ body {
 	padding: 0;
 	
 	--main-text-color: #000;
-	--main-bg: #EAEAEB;
-	--nav-bg: #fff;
-	--main-header-color: #000;
-	--main-header-bg: #fff;
+	--main-bg: #fff;
+	--nav-bg: #00374E;
+	--main-header-color: #fff;
+	--main-header-bg: #00374E;
 	--main-svg-color: #20EFC8;
 	--alternate-svg-color: #57FF00;
 	--svg-bg: #000;
@@ -14,9 +14,9 @@ body {
 	--main-svg2-color: #FF530D;
 	--section-tab-color: #000;
 	--section-tab-bg: #EAEAEB;
-	--link-color: blue;
-	--link-hover-color: #fff;
-	--link-hover-bg: #000;
+	--link-color: #fff;
+	--link-hover-color: #00374E;
+	--link-hover-bg: #fff;
 	
 	
 	color: var(--main-text-color);
@@ -24,44 +24,88 @@ body {
 	
 }
 
-a {
-	display: block;
+
+body::-webkit-scrollbar {
+    width: 2em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  outline: 1px solid black;
+ }
+
+
+
+nav {
+	display: flex;
 	width: 100%;
-	font-size: 1.2em;
-	line-height: 1.2em;
+	position: fixed;
+	top: 0;
+	margin: 0;
+	z-index: 99;
+	background-color: var(--nav-bg);
+}
+
+nav a {
+	
+	
+	font-size: 1em;
+	line-height: 1em;
 	text-decoration: none;
 	text-align: center;
+	color: var(--link-color);
+	background-color: var(--nav-bg);
+	padding: 20px;
+	
+}
+
+nav a:visited {
 	color: var(--link-color);
 	
 }
 
-a:hover {
+
+nav a:hover {
 	color: var(--link-hover-color);
 	background-color: var(--link-hover-bg);
+	
+	
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	
+	padding: 10px;
+	color: var(--main-svg-color);
+	background-color: var(--nav-bg);
 	
 }
 
 a:visited {
-	color: var(link-color);
+	color: var(--main-svg-color);
 }
 
-nav {
-	display: flex;
+a:hover {
 	
-	font-size: 1.2em;
-	line-height: 1.2em;
-	margin: 0 auto;
-	text-align: center;
+	color: var(--main-text-color);
+	background-color: var(--main-svg-color);
 	
-	background-color: var(--nav-bg);
 }
+
+
 
 .content-section {
 	display: grid;
 	grid-template-columns:  15px repeat(6, 1fr);
 	grid-gap: 1px;
+	margin-top: 60px;
 	
-
+	
 }
 
 
@@ -71,15 +115,16 @@ section {
 	margin: 2px auto;
 	text-align: center;
 	color: var(--main-text-color);
+	background-color: var(--main-bg);
 	border: 2px solid gray;
 	font-size: .9em;
 	font-family: 'Roboto', sans-serif;
 	box-shadow: 4px 8px #222;
-	
 }
 
-.vertical{
-    width:1em;
+
+.vertical {
+    width: 1em;
     word-wrap: break-word;
     font-family: monospace;  
 	border: none;
@@ -115,6 +160,7 @@ section {
 	background-color: #222;
 	color: #fff;
 	cursor: pointer;
+	
 }
 
 
@@ -173,15 +219,4 @@ div > svg {
 	transform:scale(.8);
 }
 
-#scratchpad {
-	
-	white-space: pre-wrap;
-	background-color: #fff;
-	color: #000;
-	font-size: 1.4em;
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 100px;
-}
+
