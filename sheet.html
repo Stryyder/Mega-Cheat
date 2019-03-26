@@ -221,7 +221,7 @@ FLEX
 				
 	</section>
 
-<section class="vertical">
+<section class="vertical" >
 GRID
 </section>
 
@@ -477,7 +477,8 @@ git
 					
 	</section>
 	<section>
-		additional git info
+		<a href="https://github.com/Stryyder">GitHub</a>
+		<a href="https://pages.github.com">GitHub Pages</a>
 	</section>
 	<section>
 		additional git info
@@ -496,13 +497,19 @@ git
 					<div class="child-item">g - global match</div>
 					<div class="child-item">i - case-insensitive</div>
 					<div class="child-item">m - multiline</div>
+					<div class="child-item">s - treat as single line</div>
+					<div class="child-item">x - allow comments/white space</div>
+					<div class="child-item">e - evaluate replacement</div>
+					<div class="child-item">U - ungreedy pattern</div>
 					
-		<div class="div-head">Brackets</div>
+		<div class="div-head">Groups</div>
 				
 					<div class="child-item">[abc] - any char between</div>
 					<div class="child-item">[^abc] - any char NOT between</div>
 					<div class="child-item">[0-9] - any digit</div>
 					<div class="child-item">[x|y] - any alternative listed</div>
+					<div class="child-item">(?...) - passive (non-capturing)</div>
+					<div class="child-item">\x - Group/subpattern x</div>
 				
 	</section>
 	<section>
@@ -539,7 +546,13 @@ git
 		
 	</section>
 		<section>
-		additional regExp info
+		<div class="div-head">String Replacement</div>
+				
+					<div class="child-item">$n - nth non-passive</div>
+					<div class="child-item">$` - Before matched</div>
+					<div class="child-item">$' - After matched</div>
+					<div class="child-item">$+ - last matched</div>
+					<div class="child-item">$& - Entire matched</div>
 	</section>
 	<section>
 		additional regExp info
