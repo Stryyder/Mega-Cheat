@@ -591,19 +591,63 @@ git
 	<section>
 		<div class="div-head">spread operator [...]</div>
 			<div class="cell">	
-				<div class="child-item">var list = [3, 4];</br>
-var fullList = [1, 2, ...list, 5, 6];</br>
-console.log(fullList);</br>
-// [1, 2, 3, 4, 5, 6]</div>
+				<div class="child-item code-block">
+var list = [3, 4];
+var fullList = [1, 2, ...list, 5, 6];
+console.log(fullList);
+// [1, 2, 3, 4, 5, 6]
+				</div>
+			</div>
+		<div class="div-head">template literals</div>
+			<div class="cell">	
+				<div class="child-item code-block">
+					`Hello, my name is ${person.name}!`
+				</div>
 			</div>
 	</section>
 	
 	<section>
-		additional js info
+	<div class="div-head">rest operator (must be last)</div>
+			<div class="cell">	
+				<div class="child-item code-block">
+const [a, b, ...arr] = [1, 2, 3, 7];
+console.log(a, b); // 1, 2
+console.log(arr); // [3, 7]
+				</div>
+			</div>
+			<div class="div-head">destructure</div>
+			<div class="cell">	
+				<div class="child-item code-block">
+var voxel = {x: 3.6, y: 7.4, z: 6.54 };
+const { x, y, z } = voxel; 
+// x = 3.6, y = 7.4, z = 6.54 OR
+const { x : a, y : b, z : c } = voxel 
+// a = 3.6, b = 7.4, c = 6.54
+				</div>
+			</div>
+
 	</section>
 	
 	<section>
-		additional js info
+		<div class="div-head">destructure (nested)</div>
+			<div class="cell">	
+				<div class="child-item code-block">
+const a = {
+  start: { x: 5, y: 6},
+  end: { x: 6, y: -9 }
+};
+const { start : { x: startX, y: startY }} = a;
+console.log(startX, startY); // 5, 6
+				</div>
+			</div>
+			
+			<div class="div-head">destructure (from array)</div>
+			<div class="cell">	
+				<div class="child-item code-block">
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c); // 1, 2, 5
+				</div>
+			</div>
 	</section>
 	
 	<section>

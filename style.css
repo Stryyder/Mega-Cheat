@@ -171,11 +171,16 @@ section {
 	text-align: left;
 	padding: 2px;
 	flex: 1;
-	line-height: 1em;
+	line-height: 1.2em;
 	font-size: 1em;
 }
 
-
+.code-block {
+	font-family: monospace;
+	color: teal;
+	white-space: pre-wrap;
+	padding: 2px 0 2px 15px;
+}
 
 svg:hover {
 	 transform:scale(4);
