@@ -65,10 +65,7 @@ console.log(fullList);
 					`Hello, my name is ${person.name}!`
 				</div>
 			</div>
-	</section>
-	
-	<section>
-	<div class="div-head">rest operator (must be last)</div>
+				<div class="div-head">rest operator (must be last)</div>
 			<div class="cell">	
 				<div class="child-item code-block">
 const [a, b, ...arr] = [1, 2, 3, 7];
@@ -76,6 +73,10 @@ console.log(a, b); // 1, 2
 console.log(arr); // [3, 7]
 				</div>
 			</div>
+	</section>
+	
+	<section>
+
 			<div class="div-head">destructure</div>
 			<div class="cell">	
 				<div class="child-item code-block">
@@ -86,10 +87,6 @@ const { x : a, y : b, z : c } = voxel
 // a = 3.6, b = 7.4, c = 6.54
 				</div>
 			</div>
-
-	</section>
-	
-	<section>
 		<div class="div-head">destructure (nested)</div>
 			<div class="cell">	
 				<div class="child-item code-block">
@@ -109,6 +106,32 @@ const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
 console.log(a, b, c); // 1, 2, 5
 				</div>
 			</div>
+	</section>
+	
+	<section>
+				<div class="div-head">global functions</div>
+			<div class="cell">	
+				<div class="child-item code-block">
+eval(); 
+String(23); 
+(23).toString();
+Number("23"); 
+isFinite();
+isNaN();
+parseFloat(); 
+parseInt();
+concat() — Join arrays
+indexOf() 
+join() — combine array elements into string
+lastIndexOf()
+reverse() — Sort descending 
+toString()
+shift() - remove from beginning
+unshift() — add to beginning
+
+				</div>
+			</div>
+
 	</section>
 	
 	<section>
@@ -156,8 +179,8 @@ obj = JSON.parse(text);
 document.write(obj.name);
 				</div>
 			</div>
-		<a href="https://htmlcheatsheet.com/js/">JS Cheat Sheet</a>
 		<a href="https://vanillajstoolkit.com/plugins/">JS Plugins</a>
+		<a href="https://websitesetup.org/javascript-cheat-sheet/">Cheat Sheet</a>
 	</section>
 	
 
