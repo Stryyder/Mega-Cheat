@@ -228,4 +228,22 @@ div > svg {
 	transform:scale(.8);
 }
 
+@media (max-width: 700px){
+	.content-section {
+	display: flex;
+	flex-direction: column;
+	
+	
+}
 
+.vertical {
+   
+    word-wrap: normal;
+	width: 100%;
+   
+	
+
+}
+
+
+}
