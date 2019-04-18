@@ -9,4 +9,4 @@ This is not intended to be an all-inclusive cheat sheet, but instead a personal 
 - Syntax highlighting would be nice
 
 ## Known Bugs:
-- Anchors don't jump to comfortable spots on page
+
