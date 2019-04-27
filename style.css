@@ -160,13 +160,14 @@ section {
 	
 }
 
+/*
 .cell:hover {
 	background-color: #222;
 	color: #fff;
 	cursor: pointer;
 	
 }
-
+*/
 
 .child-item {
 	
@@ -184,9 +185,11 @@ section {
 	padding: 2px 0 2px 15px;
 }
 
+/*
 .code-block:hover {
 	color: var(--main-svg-color);
 }
+*/
 
 svg:hover {
 	 transform:scale(4);
