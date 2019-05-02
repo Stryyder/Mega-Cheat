@@ -8,9 +8,9 @@
 <body>
 
 <nav>
-	<a href="#">javascript</a>
-	<a href="#flex-section">flexbox</a>
-	<a href="#grid-section">grid</a>
+	<a href="#" class="cell-JS">javascript</a>
+	<a href="#flex-section" class="cell-flex">flexbox</a>
+	<a href="#grid-section" class="cell-grid">grid</a>
 	<a href="#git-section">git</a>
 	<a href="#regex-section">regex</a>
 	<a href="#html-section">html/css</a>
@@ -19,28 +19,28 @@
 
 
 	<section id="javascript-section">
-		<div class="cell">	
+		<div class="cell cell-JS">	
 			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice()</a></div>
 				<div class="cellBody">	
 						arr.splice(index, howmany, additions)
 				</div>
 		</div>
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice() (changes original)</a></div>
 				<div class="cellBody">	
 						arr.slice(start, end)
 				</div>
 		</div>
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split()</a></div>
 				<div class="cellBody">	
 				string.split(separator, limit)
 				</div>
 		</div>
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map()</a></div>
 				<div class="cellBody">	
 				array.map (function(currentValue, index, arr), thisValue)
@@ -48,14 +48,14 @@
 				</div>
 		</div>
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter()</a></div>
 				<div class="cellBody">	
 				array.filter (function(currentValue, index, arr), thisValue)
 				</div>
 		</div>
 
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator [...]</a></div>
 				<div class="cellBody">	
 					var list = [3, 4];
@@ -66,14 +66,14 @@
 		</div>
 		
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">template literals</div>
 				<div class="cellBody">	
 				`Hello, my name is ${person.name}!`
 				</div>
 		</div>		
 				
-		<div class="cell">		
+		<div class="cell cell-JS">		
 			<div class="cellHeader">rest operator (must be last)</div>
 				<div class="cellBody">	
 					const [a, b, ...arr] = [1, 2, 3, 7];
@@ -82,7 +82,7 @@
 				</div>
 		</div>
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">forEach()</div>
 				<div class="cellBody">	
 					Array.prototype.forEach	(callbackfn [, thisArg ] )  
@@ -91,7 +91,7 @@
 		</div>
 
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">destructure</div>
 				<div class="cellBody">	
 					var voxel = {x: 3.6, y: 7.4, z: 6.54 };
@@ -102,7 +102,7 @@
 				</div>
 		</div>
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">destructure (nested)</div>
 				<div class="cellBody">	
 					const a = {
@@ -114,7 +114,7 @@
 				</div>
 		</div>
 			
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">destructure (from array)</div>
 				<div class="cellBody">	
 					const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
@@ -122,7 +122,7 @@
 				</div>
 		</div>
 
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">global functions</div>
 				<div class="cellBody">	
 					eval(); 
@@ -140,7 +140,7 @@
 				</div>
 		</div>
 		
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">arrow functions</div>
 				<div class="cellBody">	
 					() => {}; | function () {}
@@ -150,7 +150,7 @@
 				</div>
 		</div>
 
-		<div class="cell">
+		<div class="cell cell-JS">
 			<div class="cellHeader">time</div>
 				<div class="cellBody">	
 					var d = new Date();
@@ -175,32 +175,38 @@
 				</div>
 		</div>
 
-		<div class="cell">
-			<div class="cellHeader">json</div>
+	
+	<div class="cell cell-JS">	
+			<div class="cellHeader">Bitwise Operators</div>
 				<div class="cellBody">	
-					var str = '{"names":[{"first":"Air","last":"Jordan" }]}';
-					obj = JSON.parse(str);
-					document.write(obj.names[1].first);
-
-					var myJSON = JSON.stringify(myObj);
-					window.location = "demo.php?x=" + myJSON;  
-
-					localStorage.setItem("testJSON", myJSON);
-					text = localStorage.getItem("testJSON");
-					obj = JSON.parse(text);
-					document.write(obj.name);
+					& — AND statement
+					| — OR statement
+					~ — NOT
+					^ — XOR
+					<< — Left shift
+					>> — Right shift
+					>>> — Zero fill right shift
 				</div>
-		</div>
+	</div>		
 		
-		<div class="cell">
+		
+		
+		<div class="cell cell-JS">
 			<div class="cellHeader">links</div>
 				<div class="cellBody">
 					<a href="https://vanillajstoolkit.com/plugins/">JS Plugins</a>
 					<a href="https://eloquentjavascript.net">Eloquent JS</a>
 				</div>  
 		</div>
-
-		<div class="cell">	
+	
+	<div class="cell cell-JS">	
+			<div class="cellHeader">prompts</div>
+				<div class="cellBody">	
+					<div>alert()</div><div>confirm()</div><div>prompt()</div><div>console.log()</div>
+				</div>
+	</div>
+	
+		<div class="cell cell-JS">	
 			<div class="cellHeader">key codes</div>
 				<div class="cellBody-Table">	
 					<div>8</div><div>backspace</div><div>9</div><div>tab</div>
@@ -217,7 +223,7 @@
 				</div>
 		</div>
 
-		<div class="cell">	
+		<div class="cell cell-JS">	
 			<div class="cellHeader">key codes</div>
 				<div class="cellBody-Table">			
 					<div>92</div><div>right(w)</div><div>93</div><div>select</div>
@@ -234,35 +240,32 @@
 				</div>
 		</div>
 
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">other array funcs</div>
 				<div class="cellBody">	
 					<div>indexOf()</div><div>concat()</div><div>join()</div><div>lastIndexOf()</div>
 					<div>reverse()</div><div>sort()</div><div>toString() </div><div>valueOf()</div>
 				</div>
 	</div>
-	
-	<div class="cell">	
-			<div class="cellHeader">prompts</div>
+				
+<div class="cell cell-JS">
+			<div class="cellHeader">json</div>
 				<div class="cellBody">	
-					<div>alert()</div><div>confirm()</div><div>prompt()</div><div>console.log()</div>
-				</div>
-	</div>				
+					var str = '{"names":[{"first":"Air","last":"Jordan" }]}';
+					obj = JSON.parse(str);
+					document.write(obj.names[1].first);
 
-	<div class="cell">	
-			<div class="cellHeader">Bitwise Operators</div>
-				<div class="cellBody">	
-					& — AND statement
-					| — OR statement
-					~ — NOT
-					^ — XOR
-					<< — Left shift
-					>> — Right shift
-					>>> — Zero fill right shift
+					var myJSON = JSON.stringify(myObj);
+					window.location = "demo.php?x=" + myJSON;  
+
+					localStorage.setItem("testJSON", myJSON);
+					text = localStorage.getItem("testJSON");
+					obj = JSON.parse(text);
+					document.write(obj.name);
 				</div>
-	</div>	
+		</div>
 	
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">Escape Characters</div>
 				<div class="cellBody">	
 					\' — Single quote
@@ -277,7 +280,7 @@
 				</div>
 	</div>			
 		
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">Numbers</div>
 				<div class="cellBody">	
 					toExponential() — Returns string as exponential notation
@@ -290,28 +293,28 @@
 				</div>
 	</div>	
 
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">Errors</div>
 				<div class="cellBody">	
 					try, catch, throw, finally
 				</div>
 	</div>
 
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">built in error</div>
 				<div class="cellBody">	
 					name, message
 				</div>
 	</div>
 	
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">error property</div>
 				<div class="cellBody">	
 					EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError
 				</div>
 	</div>
 
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">mouse</div>
 				<div class="cellBody">	
 					onclick, oncontextmenu, ondblclick, onmousedown, 
@@ -320,14 +323,14 @@
 				</div>
 	</div>
 	
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">keyboard</div>
 				<div class="cellBody">	
 					onkeydown, onkeypress, onkeyup
 				</div>
 	</div>
 	
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">frame</div>
 				<div class="cellBody">	
 					onabort, onbeforeunload, onerror, 
@@ -336,7 +339,7 @@
 				</div>
 	</div>
 
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">forms</div>
 				<div class="cellBody">	
 					onblur, onchange, onfocus, onfocusin,
@@ -345,7 +348,7 @@
 				</div>
 	</div>
 
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">drag</div>
 				<div class="cellBody">	
 					ondrag, ondragend, ondragenter, ondragleave,
@@ -353,14 +356,14 @@
 				</div>
 	</div>
  
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">clipboard</div>
 				<div class="cellBody">	
 					oncopy, oncut, onpaste
 				</div>
 	</div>
 	
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">media</div>
 				<div class="cellBody">
 					onabort, oncanplay, oncanplaythrough,
@@ -372,14 +375,14 @@
 				</div>
 	</div>
 	
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">animation</div>
 				<div class="cellBody">	
 					animationend, animationiteration, animationstart
 				</div>
 	</div>
 	
-	<div class="cell">	
+	<div class="cell cell-JS">	
 			<div class="cellHeader">misc</div>
 				<div class="cellBody">	
 					transitionend, onmessage, onoffline, ononline, onpopstate, onshow, onstorage, ontoggle,
@@ -388,136 +391,86 @@
 	</div>
 </section>	
 
-<section class="vertical">
-<a class="anchor" id="flex-section"></a>
-FLEX
-</section>
 
-	<section >
-	
-			<div class="cellHeader">display:</div>
-				
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">flex</div>
-					</div>
-						
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">inline-flex</div>
-					</div>
-										
-				
-			<div class="cellHeader">flex-direction:</div>
-				
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">row</div>
-					</div>
+<a class="anchor" id="flex-section"></a>
+<section>
+	<div class="cell cell-flex">	
+		<div class="cellHeader">display</div>
+			<div class="cellBody-Table">		
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>flex</div>
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>inline-flex</div>
+			</div>
+	</div>		
 					
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">row-reverse</div>
-					</div>
+	<div class="cell cell-flex">	
+		<div class="cellHeader">flex-direction</div>
+			<div class="cellBody-Table">		
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>row</div>
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>row-reverse</div>
+				<div><svg><use href="#vert"></use></svg></div>
+				<div>column</div>
+				<div><svg><use href="#vert"></use></svg></div>
+				<div>column-reverse</div>
+			</div>
+	</div>
 					
-					<div class="cell">
-						<svg><use href="#vert"></use></svg>
-						<div class="child-item">column</div>
-					</div>
+	<div class="cell cell-flex">	
+		<div class="cellHeader">flex-wrap</div>
+			<div class="cellBody-Table">	
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>nowrap</div>
+				<div><svg><use href="#flex-wrap"></use></svg></div>
+				<div>wrap</div>
+				<div><svg><use href="#flex-wrap-reverse"></use></svg></div>
+				<div>wrap-reverse</div>
+			</div>
+	</div>
+
+	<div class="cell cell-flex">	
+		<div class="cellHeader">align-items(cross-axis)</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#align-items-flex-start"></use></svg></div>
+				<div>flex-start</div>
+				<div><svg><use href="#align-items-flex-end"></use></svg></div>
+				<div>flex-end</div>
+				<div><svg><use href="#align-items-flex-center"></use></svg></div>
+				<div>center</div>
+				<div><svg><use href="#align-items-flex-start"></use></svg></div>
+				<div>baseline</div>
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>stretch</div>
+			</div>
+	</div>
 						
-					<div class="cell">
-						<svg><use href="#vert"></use></svg>
-						<div class="child-item">column-reverse</div>
-					</div>
-				
-	</section>
+	<div class="cell cell-flex">	
+		<div class="cellHeader">justify-content</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#flex-start"></use></svg></div>
+				<div class="child-item">flex-start</div>
+				<div><svg><use href="#flex-end"></use></svg></div>
+				<div class="child-item">flex-end</div>
+				<div><svg><use href="#justify-content-center"></use></svg></div>
+				<div class="child-item">center</div>
+				<div><svg><use href="#justify-content-space-between"></use></svg></div>
+				<div class="child-item">space-between</div>
+				<div><svg><use href="#justify-content-space-around"></use></svg></div>
+				<div class="child-item">space-around</div>
+				<div><svg><use href="#justify-content-space-evenly"></use></svg></div>
+				<div class="child-item">space-evenly</div>
+			</div>
+	</div>
 	
-	<section>
-			<div class="cellHeader">flex-wrap:</div>
-				
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">nowrap</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-wrap"></use></svg>
-						<div class="child-item">wrap</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-wrap-reverse"></use></svg>
-						<div class="child-item">wrap-reverse</div>
-					</div>	
-				
-				
-				
-	</section>			
+
+
+
+
+
+
 	
-	<section>
-			<div class="cellHeader">align-items: (cross-axis)</div>
-				
-					<div class="cell">
-						<svg><use href="#align-items-flex-start"></use></svg>
-						<div class="child-item">flex-start</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-items-flex-end"></use></svg>
-						<div class="child-item">flex-end</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-items-flex-center"></use></svg>
-						<div class="child-item">center</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-items-flex-start"></use></svg>
-						<div class="child-item">baseline</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">stretch</div>
-					</div>	
-						
-				
-	</section>
-	
-	<section>	
-			<div class="cellHeader">justify-content:</div>
-				
-					<div class="cell">
-						<svg><use href="#flex-start"></use></svg>
-						<div class="child-item">flex-start</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-end"></use></svg>
-						<div class="child-item">flex-end</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-center"></use></svg>
-						<div class="child-item">center</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-space-between"></use></svg>
-						<div class="child-item">space-between</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-space-around"></use></svg>
-						<div class="child-item">space-around</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-space-evenly"></use></svg>
-						<div class="child-item">space-evenly</div>
-					</div>
-				
 	</section>				
 	
 	<section>	
