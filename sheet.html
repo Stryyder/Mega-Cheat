@@ -18,399 +18,375 @@
 </nav>
 
 
-<div class="content-section" >
-
-	<section class="vertical">
-		js
-	</section>
-	
 	<section id="javascript-section">
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice()</a></div>
-			<div class="cell">	
-						<div class="child-item">arr.splice(index, howmany, additions)</div>
-			</div>	
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice() (changes original)</a></div>
-			<div class="cell">	
-						<div class="child-item">arr.slice(start, end)</div>
-			</div>
+		<div class="cell">	
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice()</a></div>
+				<div class="cellBody">	
+						arr.splice(index, howmany, additions)
+				</div>
+		</div>
 		
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split()</a></div>
-			<div class="cell">	
-				<div class="child-item">string.split(separator, limit)</div>
-			</div>
-			
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map()</a></div>
-			<div class="cell">	
-				
-				<div class="child-item code-block">array.map (function(currentValue, index, arr), thisValue)
+		<div class="cell">
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice() (changes original)</a></div>
+				<div class="cellBody">	
+						arr.slice(start, end)
+				</div>
+		</div>
+		
+		<div class="cell">
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split()</a></div>
+				<div class="cellBody">	
+				string.split(separator, limit)
+				</div>
+		</div>
+		
+		<div class="cell">
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map()</a></div>
+				<div class="cellBody">	
+				array.map (function(currentValue, index, arr), thisValue)
 				 rating = watchList.map( (item) => ({"title":item["Title"], "rating":item["imdbRating"]}) );
 				</div>
-			</div>
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter()</a></div>
-			<div class="cell">	
-				<div class="child-item">array.filter (function(currentValue, index, arr), thisValue)</div>
-			</div>
-	
-	</section>
+		</div>
 		
-	<section>
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator [...]</a></div>
-			<div class="cell">	
-				<div class="child-item code-block">var list = [3, 4];
-var fullList = [1, 2, ...list, 5, 6];
-console.log(fullList);
-// [1, 2, 3, 4, 5, 6]</div>
-			</div>
-		<div class="div-head">template literals</div>
-			<div class="cell">	
-				<div class="child-item code-block">`Hello, my name is ${person.name}!`</div>
-			</div>
-				<div class="div-head">rest operator (must be last)</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-const [a, b, ...arr] = [1, 2, 3, 7];
-console.log(a, b); // 1, 2
-console.log(arr); // [3, 7]
+		<div class="cell">
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter()</a></div>
+				<div class="cellBody">	
+				array.filter (function(currentValue, index, arr), thisValue)
 				</div>
-			</div>
-			<div class="div-head">forEach()</div>
-			<div class="cell">	
-				<div class="child-item code-block">
+		</div>
+
+		<div class="cell">
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator [...]</a></div>
+				<div class="cellBody">	
+					var list = [3, 4];
+					var fullList = [1, 2, ...list, 5, 6];
+					console.log(fullList);
+					// [1, 2, 3, 4, 5, 6]
+				</div>
+		</div>
+		
+		
+		<div class="cell">
+			<div class="cellHeader">template literals</div>
+				<div class="cellBody">	
+				`Hello, my name is ${person.name}!`
+				</div>
+		</div>		
+				
+		<div class="cell">		
+			<div class="cellHeader">rest operator (must be last)</div>
+				<div class="cellBody">	
+					const [a, b, ...arr] = [1, 2, 3, 7];
+					console.log(a, b); // 1, 2
+					console.log(arr); // [3, 7]
+				</div>
+		</div>
+		
+		<div class="cell">
+			<div class="cellHeader">forEach()</div>
+				<div class="cellBody">	
 					Array.prototype.forEach	(callbackfn [, thisArg ] )  
 					or myArray.forEach(myFunction)
 				</div>
-			</div>
+		</div>
+
+		
+		<div class="cell">
+			<div class="cellHeader">destructure</div>
+				<div class="cellBody">	
+					var voxel = {x: 3.6, y: 7.4, z: 6.54 };
+					const { x, y, z } = voxel; 
+					// x = 3.6, y = 7.4, z = 6.54 OR
+					const { x : a, y : b, z : c } = voxel 
+					// a = 3.6, b = 7.4, c = 6.54
+				</div>
+		</div>
+		
+		<div class="cell">
+			<div class="cellHeader">destructure (nested)</div>
+				<div class="cellBody">	
+					const a = {
+					start: { x: 5, y: 6},
+					end: { x: 6, y: -9 }
+					};
+					const { start : { x: startX, y: startY }} = a;
+					console.log(startX, startY); // 5, 6
+				</div>
+		</div>
 			
-	</section>
-	
-	<section>
+		<div class="cell">
+			<div class="cellHeader">destructure (from array)</div>
+				<div class="cellBody">	
+					const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+					console.log(a, b, c); // 1, 2, 5
+				</div>
+		</div>
 
-			<div class="div-head">destructure</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-var voxel = {x: 3.6, y: 7.4, z: 6.54 };
-const { x, y, z } = voxel; 
-// x = 3.6, y = 7.4, z = 6.54 OR
-const { x : a, y : b, z : c } = voxel 
-// a = 3.6, b = 7.4, c = 6.54
+		<div class="cell">
+			<div class="cellHeader">global functions</div>
+				<div class="cellBody">	
+					eval(); 
+					String(23); 
+					(23).toString();
+					Number("23"); 
+					isFinite();
+					isNaN();
+					parseFloat(); 
+					parseInt();
+					reverse() — Sort descending 
+					toString()
+					shift() - remove from beginning
+					unshift() — add to beginning
 				</div>
-			</div>
-		<div class="div-head">destructure (nested)</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-const a = {
-  start: { x: 5, y: 6},
-  end: { x: 6, y: -9 }
-};
-const { start : { x: startX, y: startY }} = a;
-console.log(startX, startY); // 5, 6
+		</div>
+		
+		<div class="cell">
+			<div class="cellHeader">arrow functions</div>
+				<div class="cellBody">	
+					() => {}; | function () {}
+					x => x; | function(x) { return x; }
+					x => x + 5;
+					(x, y) => x * y;
 				</div>
-			</div>
-			
-			<div class="div-head">destructure (from array)</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
-console.log(a, b, c); // 1, 2, 5
-				</div>
-			</div>
-	</section>
-	
-	<section>
-				<div class="div-head">global functions</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-eval(); 
-String(23); 
-(23).toString();
-Number("23"); 
-isFinite();
-isNaN();
-parseFloat(); 
-parseInt();
-concat() — Join arrays
-indexOf() 
-join() — combine array elements into string
-lastIndexOf()
-reverse() — Sort descending 
-toString()
-shift() - remove from beginning
-unshift() — add to beginning
+		</div>
 
+		<div class="cell">
+			<div class="cellHeader">time</div>
+				<div class="cellBody">	
+					var d = new Date();
+					a = d.getDay();     
+					// (0-6)
+					getDate();          
+					// (1-31)
+					getFullYear();      
+					// (yyyy)
+					getHours();         
+					// (0-23)
+					getMilliseconds();  
+					// (0-999)
+					getMinutes();       
+					// (0-59)
+					getMonth();         
+					// (0-11)
+					getSeconds();       
+					// (0-59)
+					getTime();          
+					// milliseconds since 1970
 				</div>
-			</div>
-		<div class="div-head">arrow functions</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-() => {}; | function () {}
-x => x; | function(x) { return x; }
-x => x + 5;
-(x, y) => x * y;
-				</div>
-			</div>
-	</section>
-	
-	<section>
+		</div>
 
-			<div class="div-head">time</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-var d = new Date();
-a = d.getDay();     
-// (0-6)
-getDate();          
-// (1-31)
-getFullYear();      
-// (yyyy)
-getHours();         
-// (0-23)
-getMilliseconds();  
-// (0-999)
-getMinutes();       
-// (0-59)
-getMonth();         
-// (0-11)
-getSeconds();       
-// (0-59)
-getTime();          
-// milliseconds since 1970
-				</div>
-			</div>
+		<div class="cell">
+			<div class="cellHeader">json</div>
+				<div class="cellBody">	
+					var str = '{"names":[{"first":"Air","last":"Jordan" }]}';
+					obj = JSON.parse(str);
+					document.write(obj.names[1].first);
 
-	</section>
-	
-	<section>
-	<div class="div-head">json</div>
+					var myJSON = JSON.stringify(myObj);
+					window.location = "demo.php?x=" + myJSON;  
+
+					localStorage.setItem("testJSON", myJSON);
+					text = localStorage.getItem("testJSON");
+					obj = JSON.parse(text);
+					document.write(obj.name);
+				</div>
+		</div>
+		
+		<div class="cell">
+			<div class="cellHeader">links</div>
+				<div class="cellBody">
+					<a href="https://vanillajstoolkit.com/plugins/">JS Plugins</a>
+					<a href="https://eloquentjavascript.net">Eloquent JS</a>
+				</div>  
+		</div>
+
+		<div class="cell">	
+			<div class="cellHeader">key codes</div>
+				<div class="cellBody-Table">	
+					<div>8</div><div>backspace</div><div>9</div><div>tab</div>
+					<div>13</div><div>enter</div><div>16</div><div>shift</div>
+					<div>17</div><div>ctrl</div><div>18</div><div>alt</div>
+					<div>19</div><div>break</div><div>20</div><div>caps</div>
+					<div>27</div><div>escape</div><div>33</div><div>page up</div>
+					<div>34</div><div>page down</div><div>35</div><div>end</div>
+					<div>36</div><div>home</div><div>37</div><div>left</div>
+					<div>38</div><div>up</div><div>39</div><div>right</div>
+					<div>40</div><div>down</div><div>45</div><div>insert</div>
+					<div>46</div><div>delete</div><div>48-57</div><div>0-9</div>
+					<div>65-90</div><div>a-z</div><div>91</div><div>left(w)</div>
+				</div>
+		</div>
+
+		<div class="cell">	
+			<div class="cellHeader">key codes</div>
+				<div class="cellBody-Table">			
+					<div>92</div><div>right(w)</div><div>93</div><div>select</div>
+					<div>96-105</div><div>num 0-9</div><div>106</div><div>mult</div>
+					<div>107</div><div>add</div><div>109</div><div>subt</div>
+					<div>110</div><div>decimal</div><div>111</div><div>div</div>
+					<div>112-123</div><div>f1-f12</div><div>144</div><div>num lk</div>
+					<div>145</div><div>scroll lk</div><div>186</div><div>semicolon</div>
+					<div>187</div><div>equals</div><div>188</div><div>comma</div>
+					<div>189</div><div>dash</div><div>190</div><div>period</div>
+					<div>191</div><div>fwd slash</div><div>192</div><div>grave</div>
+					<div>219</div><div>open br</div><div>221</div><div>close br</div>
+					<div>220</div><div>backslash</div><div>222</div><div>single q</div>
+				</div>
+		</div>
+
 	<div class="cell">	
-				<div class="child-item code-block">
-var str = '{"names":[{"first":"Air","last":"Jordan" }]}';
-obj = JSON.parse(str);
-document.write(obj.names[1].first);
-
-var myJSON = JSON.stringify(myObj);
-window.location = "demo.php?x=" + myJSON;  
-
-localStorage.setItem("testJSON", myJSON);
-text = localStorage.getItem("testJSON");
-obj = JSON.parse(text);
-document.write(obj.name);
+			<div class="cellHeader">other array funcs</div>
+				<div class="cellBody">	
+					<div>indexOf()</div><div>concat()</div><div>join()</div><div>lastIndexOf()</div>
+					<div>reverse()</div><div>sort()</div><div>toString() </div><div>valueOf()</div>
 				</div>
-			</div>
-		<a href="https://vanillajstoolkit.com/plugins/">JS Plugins</a>
-		<a href="https://eloquentjavascript.net">Eloquent JS</a>
-				  
-	</section>
+	</div>
 	
-<section class="vertical">
-js
-</section>
-
-<section>
-	<div class="div-head">key codes</div>
-		<div class="cell">	
-			<div class="child-item table-block">
-				<div>8</div><div>backspace</div><div>9</div><div>tab</div>
-				<div>13</div><div>enter</div><div>16</div><div>shift</div>
-				<div>17</div><div>ctrl</div><div>18</div><div>alt</div>
-				<div>19</div><div>break</div><div>20</div><div>caps</div>
-				<div>27</div><div>escape</div><div>33</div><div>page up</div>
-				<div>34</div><div>page down</div><div>35</div><div>end</div>
-				<div>36</div><div>home</div><div>37</div><div>left</div>
-				<div>38</div><div>up</div><div>39</div><div>right</div>
-				<div>40</div><div>down</div><div>45</div><div>insert</div>
-				<div>46</div><div>delete</div><div>48-57</div><div>0-9</div>
-				<div>65-90</div><div>a-z</div><div>91</div><div>left(w)</div>
-								
-			</div>
-		</div>
-
-</section>
-<section>
-		
-<div class="div-head">key codes</div>
-		<div class="cell">	
-			<div class="child-item table-block">		
-				<div>92</div><div>right(w)</div><div>93</div><div>select</div>
-				<div>96-105</div><div>num 0-9</div><div>106</div><div>mult</div>
-				<div>107</div><div>add</div><div>109</div><div>subt</div>
-				<div>110</div><div>decimal</div><div>111</div><div>div</div>
-				<div>112-123</div><div>f1-f12</div><div>144</div><div>num lk</div>
-				<div>145</div><div>scroll lk</div><div>186</div><div>semicolon</div>
-				<div>187</div><div>equals</div><div>188</div><div>comma</div>
-				<div>189</div><div>dash</div><div>190</div><div>period</div>
-				<div>191</div><div>fwd slash</div><div>192</div><div>grave</div>
-				<div>219</div><div>open br</div><div>221</div><div>close br</div>
-				<div>220</div><div>backslash</div><div>222</div><div>single q</div>
-			</div>
-		</div>
-</section>
-<section>
-<div class="div-head">other array funcs</div>
-		<div class="cell">	
-			<div class="child-item define-block">	
-				<div>indexOf()</div><div>concat()</div><div>join()</div><div>lastIndexOf()</div>
-				<div>reverse()</div><div>sort()</div><div>toString() </div><div>valueOf()</div>
- 
-			</div>
-		</div>
-		<div class="div-head">prompts</div>
-			<div class="cell">	
-				<div class="child-item define-block">
+	<div class="cell">	
+			<div class="cellHeader">prompts</div>
+				<div class="cellBody">	
 					<div>alert()</div><div>confirm()</div><div>prompt()</div><div>console.log()</div>
-			</div>
-		</div>				
-</section>
-<section>
-<div class="div-head">Bitwise Operators</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-& — AND statement
-| — OR statement
-~ — NOT
-^ — XOR
-<< — Left shift
->> — Right shift
->>> — Zero fill right shift
-			</div>
-		</div>	
-<div class="div-head">Escape Characters</div>
-		<div class="cell">	
-			<div class="child-item code-block">			
-\' — Single quote
-\" — Double quote
-\\ — Backslash
-\b — Backspace
-\f — Form feed
-\n — New line
-\r — Carriage return
-\t — Horizontal tabulator
-\v — Vertical tabulator		
-			</div>
-		</div>			
-		
-</section>
-<section>
-<div class="div-head">Numbers</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-toExponential() — Returns string as exponential notation
-toFixed() — specified number of decimals
-toPrecision() — String of number (specified length)
-toString() — Number as a string
-valueOf() — Number as a number
+				</div>
+	</div>				
 
-abs(x), acos(x), asin(x), atan(x), atan2(y,x), ceil(x) cos(x) exp(x), floor(x), log(x), max(x..z), min(x..z),pow(x,y), random(), round(x), sin(x), sqrt(x), tan(x) 
-			</div>
-		</div>	
-</section>
-<section>
-<div class="div-head">errors</div>
-		<div class="cell">	
-			<div class="child-item code-block">
-try, catch, throw, finally
-</div></div>
-
-<div class="div-head">built-in error object</div>
-		<div class="cell">	
-			<div class="child-item code-block">
-name, message
-</div></div>
-<div class="div-head">error property values</div>
-		<div class="cell">	
-			<div class="child-item code-block">
-EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError
-</div></div>		
-</section>
-
-<section class="vertical">
-		js
-	</section>
-
-<section>
-<div class="div-head">mouse</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onclick, oncontextmenu, ondblclick, onmousedown, 
-onmouseenter, onmouseleave, onmousemove, onmouseover, 
-onmouseout, onmouseup 
-			</div>
-		</div>
-<div class="div-head">keyboard</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onkeydown, onkeypress, onkeyup
-			</div>
-		</div>
-<div class="div-head">frame</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onabort, onbeforeunload, onerror, 
-onhashchange, onload, onpagehide,
-onpageshow, onresize, onscroll, onunload
-			</div>
-		</div>
-</section>
-<section>
-<div class="div-head">form</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onblur, onchange, onfocus, onfocusin,
-onfocusout, oninput, oninvalid, onreset, 
-onsearch, onselect, onsubmit
-</div></div>
-
-<div class="div-head">drag</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-ondrag, ondragend, ondragenter, ondragleave,
-ondragover, ondragstart, ondrop
-</div></div>
- 
-<div class="div-head">clipboard</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-oncopy, oncut, onpaste
-</div></div>
-</section>
-
-<section>
-<div class="div-head">media</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onabort, oncanplay, oncanplaythrough,
-ondurationchange, onended, onerror, onloadeddata, 
-onloadedmetadata, onloadstart, onpause, 
-onplay, onplaying, onprogress, onratechange,
-onseeked, onseeking, onstalled, onsuspend,
-ontimeupdate, onvolumechange, onwaiting
-</div></div>
-</section>
-
-<section>
-<div class="div-head">animation</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-animationend, animationiteration, animationstart
-</div></div>
-
-<div class="div-head">misc</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-transitionend, onmessage, onoffline, ononline, onpopstate, onshow, onstorage, ontoggle,
-onwheel, ontouchcancel, ontouchend, ontouchmove, ontouchstart
-</div></div>
-</section>
-
-<section>
-js
-
-			
-</section>
-<section>
-js
-</section>
-
+	<div class="cell">	
+			<div class="cellHeader">Bitwise Operators</div>
+				<div class="cellBody">	
+					& — AND statement
+					| — OR statement
+					~ — NOT
+					^ — XOR
+					<< — Left shift
+					>> — Right shift
+					>>> — Zero fill right shift
+				</div>
+	</div>	
 	
+	<div class="cell">	
+			<div class="cellHeader">Escape Characters</div>
+				<div class="cellBody">	
+					\' — Single quote
+					\" — Double quote
+					\\ — Backslash
+					\b — Backspace
+					\f — Form feed
+					\n — New line
+					\r — Carriage return
+					\t — Horizontal tabulator
+					\v — Vertical tabulator		
+				</div>
+	</div>			
+		
+	<div class="cell">	
+			<div class="cellHeader">Numbers</div>
+				<div class="cellBody">	
+					toExponential() — Returns string as exponential notation
+					toFixed() — specified number of decimals
+					toPrecision() — String of number (specified length)
+					toString() — Number as a string
+					valueOf() — Number as a number
+
+					abs(x), acos(x), asin(x), atan(x), atan2(y,x), ceil(x) cos(x) exp(x), floor(x), log(x), max(x..z), min(x..z),pow(x,y), random(), round(x), sin(x), sqrt(x), tan(x) 
+				</div>
+	</div>	
+
+	<div class="cell">	
+			<div class="cellHeader">Errors</div>
+				<div class="cellBody">	
+					try, catch, throw, finally
+				</div>
+	</div>
+
+	<div class="cell">	
+			<div class="cellHeader">built in error</div>
+				<div class="cellBody">	
+					name, message
+				</div>
+	</div>
+	
+	<div class="cell">	
+			<div class="cellHeader">error property</div>
+				<div class="cellBody">	
+					EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError
+				</div>
+	</div>
+
+	<div class="cell">	
+			<div class="cellHeader">mouse</div>
+				<div class="cellBody">	
+					onclick, oncontextmenu, ondblclick, onmousedown, 
+					onmouseenter, onmouseleave, onmousemove, onmouseover, 
+					onmouseout, onmouseup 
+				</div>
+	</div>
+	
+	<div class="cell">	
+			<div class="cellHeader">keyboard</div>
+				<div class="cellBody">	
+					onkeydown, onkeypress, onkeyup
+				</div>
+	</div>
+	
+	<div class="cell">	
+			<div class="cellHeader">frame</div>
+				<div class="cellBody">	
+					onabort, onbeforeunload, onerror, 
+					onhashchange, onload, onpagehide,
+					onpageshow, onresize, onscroll, onunload
+				</div>
+	</div>
+
+	<div class="cell">	
+			<div class="cellHeader">forms</div>
+				<div class="cellBody">	
+					onblur, onchange, onfocus, onfocusin,
+					onfocusout, oninput, oninvalid, onreset, 
+					onsearch, onselect, onsubmit
+				</div>
+	</div>
+
+	<div class="cell">	
+			<div class="cellHeader">drag</div>
+				<div class="cellBody">	
+					ondrag, ondragend, ondragenter, ondragleave,
+					ondragover, ondragstart, ondrop
+				</div>
+	</div>
+ 
+	<div class="cell">	
+			<div class="cellHeader">clipboard</div>
+				<div class="cellBody">	
+					oncopy, oncut, onpaste
+				</div>
+	</div>
+	
+	<div class="cell">	
+			<div class="cellHeader">media</div>
+				<div class="cellBody">
+					onabort, oncanplay, oncanplaythrough,
+					ondurationchange, onended, onerror, onloadeddata, 
+					onloadedmetadata, onloadstart, onpause, 
+					onplay, onplaying, onprogress, onratechange,
+					onseeked, onseeking, onstalled, onsuspend,
+					ontimeupdate, onvolumechange, onwaiting
+				</div>
+	</div>
+	
+	<div class="cell">	
+			<div class="cellHeader">animation</div>
+				<div class="cellBody">	
+					animationend, animationiteration, animationstart
+				</div>
+	</div>
+	
+	<div class="cell">	
+			<div class="cellHeader">misc</div>
+				<div class="cellBody">	
+					transitionend, onmessage, onoffline, ononline, onpopstate, onshow, onstorage, ontoggle,
+					onwheel, ontouchcancel, ontouchend, ontouchmove, ontouchstart
+				</div>
+	</div>
+</section>	
 
 <section class="vertical">
 <a class="anchor" id="flex-section"></a>
@@ -419,7 +395,7 @@ FLEX
 
 	<section >
 	
-			<div class="div-head">display:</div>
+			<div class="cellHeader">display:</div>
 				
 					<div class="cell">
 						<svg><use href="#hor"></use></svg>
@@ -432,7 +408,7 @@ FLEX
 					</div>
 										
 				
-			<div class="div-head">flex-direction:</div>
+			<div class="cellHeader">flex-direction:</div>
 				
 					<div class="cell">
 						<svg><use href="#hor"></use></svg>
@@ -457,7 +433,7 @@ FLEX
 	</section>
 	
 	<section>
-			<div class="div-head">flex-wrap:</div>
+			<div class="cellHeader">flex-wrap:</div>
 				
 					<div class="cell">
 						<svg><use href="#hor"></use></svg>
@@ -479,7 +455,7 @@ FLEX
 	</section>			
 	
 	<section>
-			<div class="div-head">align-items: (cross-axis)</div>
+			<div class="cellHeader">align-items: (cross-axis)</div>
 				
 					<div class="cell">
 						<svg><use href="#align-items-flex-start"></use></svg>
@@ -510,7 +486,7 @@ FLEX
 	</section>
 	
 	<section>	
-			<div class="div-head">justify-content:</div>
+			<div class="cellHeader">justify-content:</div>
 				
 					<div class="cell">
 						<svg><use href="#flex-start"></use></svg>
@@ -545,7 +521,7 @@ FLEX
 	</section>				
 	
 	<section>	
-			<div class="div-head">align-content: (multiline)</div>
+			<div class="cellHeader">align-content: (multiline)</div>
 				
 					<div class="cell">
 						<svg><use href="#align-content-flex-start"></use></svg>
@@ -582,7 +558,7 @@ FLEX
 	</section>	
 
 	<section class="special-section">
-		<div class="div-head">Children</div>
+		<div class="cellHeader">Children</div>
 				
 					<div class="cell">
 						<svg><use href="#hor"></use></svg>
@@ -622,7 +598,7 @@ FLEX
 </section>
 
 	<section>
-		<div class="div-head">display</div>
+		<div class="cellHeader">display</div>
 				
 					<div class="cell">
 						<svg><use href="#vert2"></use></svg>
@@ -641,7 +617,7 @@ FLEX
 						
 				
 		
-		<div class="div-head">grid-template</div>
+		<div class="cellHeader">grid-template</div>
 				
 					<div class="cell">
 						<svg><use href="#nineBoxes"></use></svg>
@@ -661,7 +637,7 @@ FLEX
 	</section>
 	
 	<section>
-			<div class="div-head">Grid gaps</div>
+			<div class="cellHeader">Grid gaps</div>
 				
 				<div class="cell">
 					<svg><use href="#nineBoxesSkinny"></use></svg>
@@ -679,7 +655,7 @@ FLEX
 				</div>
 				
 				
-			<div class="div-head">justify-items (h)</div>
+			<div class="cellHeader">justify-items (h)</div>
 				
 				<div class="cell">	
 					<svg><use href="#nineBoxesSkinnyLeft"></use></svg>
@@ -706,7 +682,7 @@ FLEX
 	</section>
 	
 	<section>	
-			<div class="div-head">align-items (v)</div>
+			<div class="cellHeader">align-items (v)</div>
 				
 				<div class="cell">	
 					<svg><use href="#nineBoxesStart"></use></svg>	
@@ -729,7 +705,7 @@ FLEX
 				</div>	
 					
 				
-			<div class="div-head">Auto</div>
+			<div class="cellHeader">Auto</div>
 				<div class="cell">	
 					<svg><use href="#auto-flow-row"></use></svg>	
 					<div class="child-item">grid-auto-flow: row</div>
@@ -748,7 +724,7 @@ FLEX
 	</section>				
 	
 	<section>	
-			<div class="div-head">justify-content (small grid (h))</div>
+			<div class="cellHeader">justify-content (small grid (h))</div>
 				
 				<div class="cell">	
 					<svg><use href="#nineBoxesScaledownStart"></use></svg>	
@@ -788,7 +764,7 @@ FLEX
 	</section>	
 
 	<section>
-		<div class="div-head">align-content (small grid (v))</div>
+		<div class="cellHeader">align-content (small grid (v))</div>
 				
 				<div class="cell">	
 					<svg><use href="#nineBoxesScaledownStart"></use></svg>
@@ -842,34 +818,48 @@ FLEX
 </section>
 
 	<section>
-		<div class="div-head">New Project</div>
-				
-					<div class="child-item">git init https://repositoryurl mydir</div>
-					<div class="child-item">git clone</div>
-					<div class="child-item">git status</div>
-					<div class="child-item">git log -3</div>
-					<div class="child-item">git blame someFile.txt</div>
+		<div class="cellHeader">New Project</div>
+			<div class="cell">	
+				<div class="child-item define-block">
+					
+					<div>git init https://repositoryurl mydir</div>
+					<div>git clone</div>
+					<div>git status</div>
+					<div>git log -3</div>
+					<div>git blame someFile.txt</div>
+					
+				</div>
+			</div>
 					
 	</section>
 	<section>
-		<div class="div-head">Day to Day</div>
-				
-					<div class="child-item">git pull</div>
-					<div class="child-item">git add file.txt</div>
-					<div class="child-item">git commit -am "message"</div>
-					<div class="child-item">git add */*.html</div>
-					<div class="child-item">git push</div>
+		<div class="cellHeader">Day to Day</div>
+			<div class="cell">	
+				<div class="child-item define-block">
+					<div>git pull</div>
+					<div>git add file.txt</div>
+					<div>git commit -am "message"</div>
+					<div>git add */*.html</div>
+					<div>git push</div>
+					<div>ls -la</div>
+					<div>git remove -v</div>
+				</div>
+			</div>
 					
 	</section>
 	<section>
-		<div class="div-head">Branching</div>
+		<div class="cellHeader">Branching</div>
+			<div class="cell">		
+				<div class="child-item define-block">
 				
-					<div class="child-item">git branch (-r, -a)</div>
-					<div class="child-item">git branch abc (creates)</div>
-					<div class="child-item">git checkout (switches)</div>
-					<div class="child-item">git reset --hard HEAD (discards)</div>
-					<div class="child-item">git push</div>
-					<div class="child-item"><a href="https://learngitbranching.js.org" target="_blank">Learn Branching</a></div>
+					<div>git branch (-r, -a)</div>
+					<div>git branch abc (creates)</div>
+					<div>git checkout (switches)</div>
+					<div>git reset --hard HEAD (discards)</div>
+					
+					<div><a href="https://learngitbranching.js.org" target="_blank">Learn Branching</a></div>
+				</div>
+			</div>
 					
 	</section>
 	<section>
@@ -888,7 +878,7 @@ FLEX
 	</section>
 	
 	<section id="regex-section">
-		<div class="div-head">Modifiers</div>
+		<div class="cellHeader">Modifiers</div>
 				
 					<div class="child-item">g - global match</div>
 					<div class="child-item">i - case-insensitive</div>
@@ -898,7 +888,7 @@ FLEX
 					<div class="child-item">e - evaluate replacement</div>
 					<div class="child-item">U - ungreedy pattern</div>
 					
-		<div class="div-head">Groups</div>
+		<div class="cellHeader">Groups</div>
 				
 					<div class="child-item">[abc] - any char between</div>
 					<div class="child-item">[^abc] - any char NOT between</div>
@@ -909,7 +899,7 @@ FLEX
 				
 	</section>
 	<section>
-		<div class="div-head">Meta</div>
+		<div class="cellHeader">Meta</div>
 				
 					<div class="child-item">. - single char (- newline or line terminator)</div>
 					<div class="child-item">\w - word</div>
@@ -926,7 +916,7 @@ FLEX
 		
 	</section>
 	<section>
-		<div class="div-head">Quantifier</div>
+		<div class="cellHeader">Quantifier</div>
 				
 					<div class="child-item">n+ - at least one n</div>
 					<div class="child-item">n* - zero or more n</div>
@@ -942,7 +932,7 @@ FLEX
 		
 	</section>
 		<section>
-		<div class="div-head">String Replacement</div>
+		<div class="cellHeader">String Replacement</div>
 				
 					<div class="child-item">$n - nth non-passive</div>
 					<div class="child-item">$` - Before matched</div>
@@ -964,7 +954,7 @@ FLEX
 </section>
 	
 	<section>
-		<div class="div-head">tools</div>
+		<div class="cellHeader">tools</div>
 			<div class="cell">	
 				<div class="child-item">	
 					<a href="https://fonts.google.com">Google Fonts</a>
@@ -979,7 +969,7 @@ FLEX
 			</div>
 	</section>
 	<section>
-	<div class="div-head">standards</div>
+	<div class="cellHeader">standards</div>
 			<div class="cell">	
 				<div class="child-item">	
 					<a href="https://support.google.com/webmasters/answer/7451184?hl=en">SEO Guide</a>
@@ -992,7 +982,7 @@ FLEX
 			</div>
 	</section>
 	<section>
-	<div class="div-head">inbox</div>
+	<div class="cellHeader">inbox</div>
 			<div class="cell">	
 				<div class="child-item">
 					<a href="https://learninglabs.cisco.com">LL Cisco</a>
@@ -1007,7 +997,7 @@ FLEX
 			</div>
 	</section>
 	<section>
-	<div class="div-head">inbox</div>
+	<div class="cellHeader">inbox</div>
 			<div class="cell">	
 				<div class="child-item">
 					<a href="https://www.html-5-tutorial.com/all-html-tags.htm">All HTML</a>
@@ -1020,7 +1010,7 @@ FLEX
 			</div>
 	</section>
 	<section>
-		<div class="div-head">graphics</div>
+		<div class="cellHeader">graphics</div>
 			<div class="cell">	
 				<div class="child-item">
 				  <a href="https://www.pexels.com">Pexels</a>
