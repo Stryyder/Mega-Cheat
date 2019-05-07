@@ -8,1042 +8,786 @@
 <body>
 
 <nav>
-	<a href="#">javascript</a>
-	<a href="#flex-section">flexbox</a>
-	<a href="#grid-section">grid</a>
-	<a href="#git-section">git</a>
-	<a href="#regex-section">regex</a>
-	<a href="#html-section">html/css</a>
+	<a href="#" class="cell-JS">javascript</a>
+	<a href="#layout-section" class="cell-layout">layout</a>
+	<a href="#git-section" class="cell-git">git</a>
+	<a href="#regex-section" class="cell-regex">regex</a>
+	<a href="#tools-section" class="cell-tools">tools</a>
 	<a href="http://overapi.com">Other Sheets</a>
 </nav>
 
-
-<div class="content-section" >
-
-	<section class="vertical">
-		js
-	</section>
-	
+<!-- ==================== LAYOUT =======================  -->
+<h2 class="cell-JS">JAVASCRIPT</h2>
 	<section id="javascript-section">
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice()</a></div>
-			<div class="cell">	
-						<div class="child-item">arr.splice(index, howmany, additions)</div>
-			</div>	
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice() (changes original)</a></div>
-			<div class="cell">	
-						<div class="child-item">arr.slice(start, end)</div>
-			</div>
+		<div class="cell cell-JS">	
+			<div class="cellHeader">array funcs</div>
+				<div class="cellBody-Narrow-Table">
+					<div><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice()</a></div>				
+					<div>arr.splice(index, howmany, additions)</div>
+					<div><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice() (co)</a></div>
+					<div>arr.slice(start, end)</div>
+					<div><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split()</a></div>
+					<div>string.split(separator, limit)</div>
+					<div><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter()</a></div>
+					<div>array.filter (function(currentValue, index, arr), thisValue)</div>
+				</div>
+		</div>
 		
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">split()</a></div>
-			<div class="cell">	
-				<div class="child-item">string.split(separator, limit)</div>
-			</div>
-			
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map()</a></div>
-			<div class="cell">	
-				
-				<div class="child-item code-block">array.map (function(currentValue, index, arr), thisValue)
+		<div class="cell cell-JS">
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map()</a></div>
+				<div class="cellBody">	
+				array.map (function(currentValue, index, arr), thisValue)
 				 rating = watchList.map( (item) => ({"title":item["Title"], "rating":item["imdbRating"]}) );
 				</div>
-			</div>
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter()</a></div>
-			<div class="cell">	
-				<div class="child-item">array.filter (function(currentValue, index, arr), thisValue)</div>
-			</div>
-	
-	</section>
-		
-	<section>
-		<div class="div-head"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator [...]</a></div>
-			<div class="cell">	
-				<div class="child-item code-block">var list = [3, 4];
-var fullList = [1, 2, ...list, 5, 6];
-console.log(fullList);
-// [1, 2, 3, 4, 5, 6]</div>
-			</div>
-		<div class="div-head">template literals</div>
-			<div class="cell">	
-				<div class="child-item code-block">`Hello, my name is ${person.name}!`</div>
-			</div>
-				<div class="div-head">rest operator (must be last)</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-const [a, b, ...arr] = [1, 2, 3, 7];
-console.log(a, b); // 1, 2
-console.log(arr); // [3, 7]
+		</div>
+
+		<div class="cell cell-JS">
+			<div class="cellHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator [...]</a></div>
+				<div class="cellBody">	
+					var list = [3, 4];
+					var fullList = [1, 2, ...list, 5, 6];
+					console.log(fullList);
+					// [1, 2, 3, 4, 5, 6]
 				</div>
+		</div>
+		
+		
+		<div class="cell cell-JS">
+			<div class="cellHeader">template literals</div>
+				<div class="cellBody">	
+				`Hello, my name is ${person.name}!`
+				</div>
+			<div class="cellHeader">new concepts</div>
+				<div class="cellBody">	
+				arity, currying, partial application, Arithmetic Progression summing formula
 			</div>
-			<div class="div-head">forEach()</div>
-			<div class="cell">	
-				<div class="child-item code-block">
+		</div>		
+				
+		<div class="cell cell-JS">		
+			<div class="cellHeader">rest operator (must be last)</div>
+				<div class="cellBody">	
+					const [a, b, ...arr] = [1, 2, 3, 7];
+					console.log(a, b); // 1, 2
+					console.log(arr); // [3, 7]
+				</div>
+		</div>
+		
+		<div class="cell cell-JS">
+			<div class="cellHeader">forEach()</div>
+				<div class="cellBody">	
 					Array.prototype.forEach	(callbackfn [, thisArg ] )  
 					or myArray.forEach(myFunction)
 				</div>
-			</div>
-			
-	</section>
-	
-	<section>
-
-			<div class="div-head">destructure</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-var voxel = {x: 3.6, y: 7.4, z: 6.54 };
-const { x, y, z } = voxel; 
-// x = 3.6, y = 7.4, z = 6.54 OR
-const { x : a, y : b, z : c } = voxel 
-// a = 3.6, b = 7.4, c = 6.54
-				</div>
-			</div>
-		<div class="div-head">destructure (nested)</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-const a = {
-  start: { x: 5, y: 6},
-  end: { x: 6, y: -9 }
-};
-const { start : { x: startX, y: startY }} = a;
-console.log(startX, startY); // 5, 6
-				</div>
-			</div>
-			
-			<div class="div-head">destructure (from array)</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
-console.log(a, b, c); // 1, 2, 5
-				</div>
-			</div>
-	</section>
-	
-	<section>
-				<div class="div-head">global functions</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-eval(); 
-String(23); 
-(23).toString();
-Number("23"); 
-isFinite();
-isNaN();
-parseFloat(); 
-parseInt();
-concat() — Join arrays
-indexOf() 
-join() — combine array elements into string
-lastIndexOf()
-reverse() — Sort descending 
-toString()
-shift() - remove from beginning
-unshift() — add to beginning
-
-				</div>
-			</div>
-		<div class="div-head">arrow functions</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-() => {}; | function () {}
-x => x; | function(x) { return x; }
-x => x + 5;
-(x, y) => x * y;
-				</div>
-			</div>
-	</section>
-	
-	<section>
-
-			<div class="div-head">time</div>
-			<div class="cell">	
-				<div class="child-item code-block">
-var d = new Date();
-a = d.getDay();     
-// (0-6)
-getDate();          
-// (1-31)
-getFullYear();      
-// (yyyy)
-getHours();         
-// (0-23)
-getMilliseconds();  
-// (0-999)
-getMinutes();       
-// (0-59)
-getMonth();         
-// (0-11)
-getSeconds();       
-// (0-59)
-getTime();          
-// milliseconds since 1970
-				</div>
-			</div>
-
-	</section>
-	
-	<section>
-	<div class="div-head">json</div>
-	<div class="cell">	
-				<div class="child-item code-block">
-var str = '{"names":[{"first":"Air","last":"Jordan" }]}';
-obj = JSON.parse(str);
-document.write(obj.names[1].first);
-
-var myJSON = JSON.stringify(myObj);
-window.location = "demo.php?x=" + myJSON;  
-
-localStorage.setItem("testJSON", myJSON);
-text = localStorage.getItem("testJSON");
-obj = JSON.parse(text);
-document.write(obj.name);
-				</div>
-			</div>
-		<a href="https://vanillajstoolkit.com/plugins/">JS Plugins</a>
-		<a href="https://eloquentjavascript.net">Eloquent JS</a>
-				  
-	</section>
-	
-<section class="vertical">
-js
-</section>
-
-<section>
-	<div class="div-head">key codes</div>
-		<div class="cell">	
-			<div class="child-item table-block">
-				<div>8</div><div>backspace</div><div>9</div><div>tab</div>
-				<div>13</div><div>enter</div><div>16</div><div>shift</div>
-				<div>17</div><div>ctrl</div><div>18</div><div>alt</div>
-				<div>19</div><div>break</div><div>20</div><div>caps</div>
-				<div>27</div><div>escape</div><div>33</div><div>page up</div>
-				<div>34</div><div>page down</div><div>35</div><div>end</div>
-				<div>36</div><div>home</div><div>37</div><div>left</div>
-				<div>38</div><div>up</div><div>39</div><div>right</div>
-				<div>40</div><div>down</div><div>45</div><div>insert</div>
-				<div>46</div><div>delete</div><div>48-57</div><div>0-9</div>
-				<div>65-90</div><div>a-z</div><div>91</div><div>left(w)</div>
-								
-			</div>
 		</div>
 
-</section>
-<section>
 		
-<div class="div-head">key codes</div>
-		<div class="cell">	
-			<div class="child-item table-block">		
-				<div>92</div><div>right(w)</div><div>93</div><div>select</div>
-				<div>96-105</div><div>num 0-9</div><div>106</div><div>mult</div>
-				<div>107</div><div>add</div><div>109</div><div>subt</div>
-				<div>110</div><div>decimal</div><div>111</div><div>div</div>
-				<div>112-123</div><div>f1-f12</div><div>144</div><div>num lk</div>
-				<div>145</div><div>scroll lk</div><div>186</div><div>semicolon</div>
-				<div>187</div><div>equals</div><div>188</div><div>comma</div>
-				<div>189</div><div>dash</div><div>190</div><div>period</div>
-				<div>191</div><div>fwd slash</div><div>192</div><div>grave</div>
-				<div>219</div><div>open br</div><div>221</div><div>close br</div>
-				<div>220</div><div>backslash</div><div>222</div><div>single q</div>
-			</div>
+		<div class="cell cell-JS">
+			<div class="cellHeader">destructure</div>
+				<div class="cellBody">	
+					var voxel = {x: 3.6, y: 7.4, z: 6.54 };
+					const { x, y, z } = voxel; 
+					// x = 3.6, y = 7.4, z = 6.54 OR
+					const { x : a, y : b, z : c } = voxel 
+					// a = 3.6, b = 7.4, c = 6.54
+				</div>
 		</div>
-</section>
-<section>
-<div class="div-head">other array funcs</div>
-		<div class="cell">	
-			<div class="child-item define-block">	
-				<div>indexOf()</div><div>concat()</div><div>join()</div><div>lastIndexOf()</div>
-				<div>reverse()</div><div>sort()</div><div>toString() </div><div>valueOf()</div>
- 
-			</div>
+		
+		<div class="cell cell-JS">
+			<div class="cellHeader">destructure (nested)</div>
+				<div class="cellBody">	
+					const a = {
+					start: { x: 5, y: 6},
+					end: { x: 6, y: -9 }
+					};
+					const { start : { x: startX, y: startY }} = a;
+					console.log(startX, startY); // 5, 6
+				</div>
 		</div>
-		<div class="div-head">prompts</div>
-			<div class="cell">	
-				<div class="child-item define-block">
+			
+		<div class="cell cell-JS">
+			<div class="cellHeader">destructure (from array)</div>
+				<div class="cellBody">	
+					const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+					console.log(a, b, c); // 1, 2, 5
+				</div>
+		</div>
+
+		<div class="cell cell-JS">
+			<div class="cellHeader">global functions</div>
+				<div class="cellBody">	
+					eval(); 
+					String(23); 
+					(23).toString();
+					Number("23"); 
+					isFinite();
+					isNaN();
+					parseFloat(); 
+					parseInt();
+					reverse() — Sort descending 
+					toString()
+					shift() - remove from beginning
+					unshift() — add to beginning
+				</div>
+		</div>
+		
+		<div class="cell cell-JS">
+			<div class="cellHeader">arrow functions</div>
+				<div class="cellBody">	
+					() => {}; | function () {}
+					x => x; | function(x) { return x; }
+					x => x + 5;
+					(x, y) => x * y;
+				</div>
+		</div>
+
+		<div class="cell cell-JS">
+			<div class="cellHeader">time</div>
+				<div class="cellBody">	
+					var d = new Date();
+					a = d.getDay();     
+					// (0-6)
+					getDate();          
+					// (1-31)
+					getFullYear();      
+					// (yyyy)
+					getHours();         
+					// (0-23)
+					getMilliseconds();  
+					// (0-999)
+					getMinutes();       
+					// (0-59)
+					getMonth();         
+					// (0-11)
+					getSeconds();       
+					// (0-59)
+					getTime();          
+					// milliseconds since 1970
+				</div>
+		</div>
+
+	
+	<div class="cell cell-JS">	
+			<div class="cellHeader">Bitwise Operators</div>
+				<div class="cellBody">	
+					& — AND statement
+					| — OR statement
+					~ — NOT
+					^ — XOR
+					<< — Left shift
+					>> — Right shift
+					>>> — Zero fill right shift
+				</div>
+	</div>		
+
+	<div class="cell cell-JS">
+			<div class="cellHeader">links</div>
+				<div class="cellBody">
+					<a href="https://vanillajstoolkit.com/plugins/">JS Plugins</a>
+					<a href="https://eloquentjavascript.net">Eloquent JS</a>
+				</div>  
+		</div>
+
+	<div class="cell cell-JS">	
+		<div class="cellHeader">Escape Characters</div>
+			<div class="cellBody">	
+				\' — Single quote
+				\" — Double quote
+				\\ — Backslash
+				\b — Backspace
+				\f — Form feed
+				\n — New line
+				\r — Carriage return
+				\t — Horizontal tabulator
+				\v — Vertical tabulator		
+			</div>
+	</div>
+		
+		<div class="cell cell-JS">	
+			<div class="cellHeader">key codes</div>
+				<div class="cellBody-Table">	
+					<div>8</div><div>backspace</div><div>9</div><div>tab</div>
+					<div>13</div><div>enter</div><div>16</div><div>shift</div>
+					<div>17</div><div>ctrl</div><div>18</div><div>alt</div>
+					<div>19</div><div>break</div><div>20</div><div>caps</div>
+					<div>27</div><div>escape</div><div>33</div><div>page up</div>
+					<div>34</div><div>page down</div><div>35</div><div>end</div>
+					<div>36</div><div>home</div><div>37</div><div>left</div>
+					<div>38</div><div>up</div><div>39</div><div>right</div>
+					<div>40</div><div>down</div><div>45</div><div>insert</div>
+					<div>46</div><div>delete</div><div>48-57</div><div>0-9</div>
+					<div>65-90</div><div>a-z</div><div>91</div><div>left(w)</div>
+				</div>
+		</div>
+
+		<div class="cell cell-JS">	
+			<div class="cellHeader">key codes</div>
+				<div class="cellBody-Table">			
+					<div>92</div><div>right(w)</div><div>93</div><div>select</div>
+					<div>96-105</div><div>num 0-9</div><div>106</div><div>mult</div>
+					<div>107</div><div>add</div><div>109</div><div>subt</div>
+					<div>110</div><div>decimal</div><div>111</div><div>div</div>
+					<div>112-123</div><div>f1-f12</div><div>144</div><div>num lk</div>
+					<div>145</div><div>scroll lk</div><div>186</div><div>semicolon</div>
+					<div>187</div><div>equals</div><div>188</div><div>comma</div>
+					<div>189</div><div>dash</div><div>190</div><div>period</div>
+					<div>191</div><div>fwd slash</div><div>192</div><div>grave</div>
+					<div>219</div><div>open br</div><div>221</div><div>close br</div>
+					<div>220</div><div>backslash</div><div>222</div><div>single q</div>
+				</div>
+		</div>
+
+				
+<div class="cell cell-JS cell-wide">
+			<div class="cellHeader">json</div>
+				<div class="cellBody">	
+					var str = '{"names":[{"first":"Air","last":"Jordan" }]}';
+					obj = JSON.parse(str);
+					document.write(obj.names[1].first);
+
+					var myJSON = JSON.stringify(myObj);
+					window.location = "demo.php?x=" + myJSON;  
+
+					localStorage.setItem("testJSON", myJSON);
+					text = localStorage.getItem("testJSON");
+					obj = JSON.parse(text);
+					document.write(obj.name);
+				</div>
+		</div>
+		
+	<div class="cell cell-JS cell-wide">	
+			<div class="cellHeader">Numbers</div>
+				<div class="cellBody">	
+					toExponential() — Returns string as exponential notation
+					toFixed() — specified number of decimals
+					toPrecision() — String of number (specified length)
+					toString() — Number as a string
+					valueOf() — Number as a number
+
+					abs(x), acos(x), asin(x), atan(x), atan2(y,x), ceil(x) cos(x) exp(x), floor(x), log(x), max(x..z), min(x..z),pow(x,y), random(), round(x), sin(x), sqrt(x), tan(x) 
+				</div>
+	</div>	
+
+	<div class="cell cell-JS">	
+			<div class="cellHeader">other funcs</div>
+				<div class="cellBody-Table">	
+					<div>indexOf()</div><div>concat()</div><div>join()</div><div>lastIndexOf()</div>
+					<div>reverse()</div><div>sort()</div><div>toString() </div><div>valueOf()</div>
 					<div>alert()</div><div>confirm()</div><div>prompt()</div><div>console.log()</div>
-			</div>
-		</div>				
-</section>
-<section>
-<div class="div-head">Bitwise Operators</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-& — AND statement
-| — OR statement
-~ — NOT
-^ — XOR
-<< — Left shift
->> — Right shift
->>> — Zero fill right shift
-			</div>
-		</div>	
-<div class="div-head">Escape Characters</div>
-		<div class="cell">	
-			<div class="child-item code-block">			
-\' — Single quote
-\" — Double quote
-\\ — Backslash
-\b — Backspace
-\f — Form feed
-\n — New line
-\r — Carriage return
-\t — Horizontal tabulator
-\v — Vertical tabulator		
-			</div>
-		</div>			
-		
-</section>
-<section>
-<div class="div-head">Numbers</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-toExponential() — Returns string as exponential notation
-toFixed() — specified number of decimals
-toPrecision() — String of number (specified length)
-toString() — Number as a string
-valueOf() — Number as a number
+				</div>
+	</div>
+	
+	<div class="cell cell-JS">	
+			<div class="cellHeader">Errors</div>
+				<div class="cellBody">	
+					try, catch, throw, finally
+					built-in error: name, message
+					error-properties: EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError
+				</div>
+	</div>
 
-abs(x), acos(x), asin(x), atan(x), atan2(y,x), ceil(x) cos(x) exp(x), floor(x), log(x), max(x..z), min(x..z),pow(x,y), random(), round(x), sin(x), sqrt(x), tan(x) 
-			</div>
-		</div>	
-</section>
-<section>
-<div class="div-head">errors</div>
-		<div class="cell">	
-			<div class="child-item code-block">
-try, catch, throw, finally
-</div></div>
+	<div class="cell cell-JS">	
+			<div class="cellHeader">mouse</div>
+				<div class="cellBody">	
+					onclick, oncontextmenu, ondblclick, onmousedown, 
+					onmouseenter, onmouseleave, onmousemove, onmouseover, 
+					onmouseout, onmouseup 
+				</div>
+	</div>
+	
+	<div class="cell cell-JS">	
+			<div class="cellHeader">keyboard</div>
+				<div class="cellBody">	
+					onkeydown, onkeypress, onkeyup
+				</div>
+	</div>
+	
+	<div class="cell cell-JS">	
+			<div class="cellHeader">frame</div>
+				<div class="cellBody">	
+					onabort, onbeforeunload, onerror, 
+					onhashchange, onload, onpagehide,
+					onpageshow, onresize, onscroll, onunload
+				</div>
+	</div>
 
-<div class="div-head">built-in error object</div>
-		<div class="cell">	
-			<div class="child-item code-block">
-name, message
-</div></div>
-<div class="div-head">error property values</div>
-		<div class="cell">	
-			<div class="child-item code-block">
-EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError
-</div></div>		
-</section>
+	<div class="cell cell-JS">	
+			<div class="cellHeader">forms</div>
+				<div class="cellBody">	
+					onblur, onchange, onfocus, onfocusin,
+					onfocusout, oninput, oninvalid, onreset, 
+					onsearch, onselect, onsubmit
+				</div>
+	</div>
 
-<section class="vertical">
-		js
-	</section>
-
-<section>
-<div class="div-head">mouse</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onclick, oncontextmenu, ondblclick, onmousedown, 
-onmouseenter, onmouseleave, onmousemove, onmouseover, 
-onmouseout, onmouseup 
-			</div>
-		</div>
-<div class="div-head">keyboard</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onkeydown, onkeypress, onkeyup
-			</div>
-		</div>
-<div class="div-head">frame</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onabort, onbeforeunload, onerror, 
-onhashchange, onload, onpagehide,
-onpageshow, onresize, onscroll, onunload
-			</div>
-		</div>
-</section>
-<section>
-<div class="div-head">form</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onblur, onchange, onfocus, onfocusin,
-onfocusout, oninput, oninvalid, onreset, 
-onsearch, onselect, onsubmit
-</div></div>
-
-<div class="div-head">drag</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-ondrag, ondragend, ondragenter, ondragleave,
-ondragover, ondragstart, ondrop
-</div></div>
+	<div class="cell cell-JS">	
+			<div class="cellHeader">drag</div>
+				<div class="cellBody">	
+					ondrag, ondragend, ondragenter, ondragleave,
+					ondragover, ondragstart, ondrop
+				</div>
+	</div>
  
-<div class="div-head">clipboard</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-oncopy, oncut, onpaste
-</div></div>
-</section>
-
-<section>
-<div class="div-head">media</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-onabort, oncanplay, oncanplaythrough,
-ondurationchange, onended, onerror, onloadeddata, 
-onloadedmetadata, onloadstart, onpause, 
-onplay, onplaying, onprogress, onratechange,
-onseeked, onseeking, onstalled, onsuspend,
-ontimeupdate, onvolumechange, onwaiting
-</div></div>
-</section>
-
-<section>
-<div class="div-head">animation</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-animationend, animationiteration, animationstart
-</div></div>
-
-<div class="div-head">misc</div>
-		<div class="cell">	
-			<div class="child-item code-block">	
-transitionend, onmessage, onoffline, ononline, onpopstate, onshow, onstorage, ontoggle,
-onwheel, ontouchcancel, ontouchend, ontouchmove, ontouchstart
-</div></div>
-</section>
-
-<section>
-js
-
-			
-</section>
-<section>
-js
-</section>
-
+	<div class="cell cell-JS">	
+			<div class="cellHeader">clipboard</div>
+				<div class="cellBody">	
+					oncopy, oncut, onpaste
+				</div>
+	</div>
 	
-
-<section class="vertical">
-<a class="anchor" id="flex-section"></a>
-FLEX
-</section>
-
-	<section >
+	<div class="cell cell-JS">	
+			<div class="cellHeader">media</div>
+				<div class="cellBody">
+					onabort, oncanplay, oncanplaythrough,
+					ondurationchange, onended, onerror, onloadeddata, 
+					onloadedmetadata, onloadstart, onpause, 
+					onplay, onplaying, onprogress, onratechange,
+					onseeked, onseeking, onstalled, onsuspend,
+					ontimeupdate, onvolumechange, onwaiting
+				</div>
+	</div>
 	
-			<div class="div-head">display:</div>
-				
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">flex</div>
-					</div>
-						
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">inline-flex</div>
-					</div>
-										
-				
-			<div class="div-head">flex-direction:</div>
-				
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">row</div>
-					</div>
+	<div class="cell cell-JS">	
+			<div class="cellHeader">animation</div>
+				<div class="cellBody">	
+					animationend, animationiteration, animationstart
+				</div>
+	</div>
+	
+	<div class="cell cell-JS">	
+			<div class="cellHeader">misc</div>
+				<div class="cellBody">	
+					transitionend, onmessage, onoffline, ononline, onpopstate, onshow, onstorage, ontoggle,
+					onwheel, ontouchcancel, ontouchend, ontouchmove, ontouchstart
+				</div>
+	</div>
+</section>	
+
+<!-- ==================== LAYOUT =======================  -->
+
+<a class="anchor" id="layout-section"></a>
+<h2 class="cell-layout">LAYOUT</h2>
+<section>
+	<div class="cell cell-layout">	
+		<div class="cellHeader">display</div>
+			<div class="cellBody-Table">		
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>flex</div>
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>inline-flex</div>
+			</div>
+	</div>		
 					
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">row-reverse</div>
-					</div>
+	<div class="cell cell-layout">	
+		<div class="cellHeader">flex-direction</div>
+			<div class="cellBody-Table">		
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>row</div>
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>row-reverse</div>
+				<div><svg><use href="#vert"></use></svg></div>
+				<div>column</div>
+				<div><svg><use href="#vert"></use></svg></div>
+				<div>column-reverse</div>
+			</div>
+	</div>
 					
-					<div class="cell">
-						<svg><use href="#vert"></use></svg>
-						<div class="child-item">column</div>
-					</div>
-						
-					<div class="cell">
-						<svg><use href="#vert"></use></svg>
-						<div class="child-item">column-reverse</div>
-					</div>
-				
-	</section>
-	
-	<section>
-			<div class="div-head">flex-wrap:</div>
-				
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">nowrap</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-wrap"></use></svg>
-						<div class="child-item">wrap</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-wrap-reverse"></use></svg>
-						<div class="child-item">wrap-reverse</div>
-					</div>	
-				
-				
-				
-	</section>			
-	
-	<section>
-			<div class="div-head">align-items: (cross-axis)</div>
-				
-					<div class="cell">
-						<svg><use href="#align-items-flex-start"></use></svg>
-						<div class="child-item">flex-start</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-items-flex-end"></use></svg>
-						<div class="child-item">flex-end</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-items-flex-center"></use></svg>
-						<div class="child-item">center</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-items-flex-start"></use></svg>
-						<div class="child-item">baseline</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">stretch</div>
-					</div>	
-						
-				
-	</section>
-	
-	<section>	
-			<div class="div-head">justify-content:</div>
-				
-					<div class="cell">
-						<svg><use href="#flex-start"></use></svg>
-						<div class="child-item">flex-start</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-end"></use></svg>
-						<div class="child-item">flex-end</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-center"></use></svg>
-						<div class="child-item">center</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-space-between"></use></svg>
-						<div class="child-item">space-between</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-space-around"></use></svg>
-						<div class="child-item">space-around</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#justify-content-space-evenly"></use></svg>
-						<div class="child-item">space-evenly</div>
-					</div>
-				
-	</section>				
-	
-	<section>	
-			<div class="div-head">align-content: (multiline)</div>
-				
-					<div class="cell">
-						<svg><use href="#align-content-flex-start"></use></svg>
-						<div class="child-item">flex-start</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-content-flex-end"></use></svg>
-						<div class="child-item">flex-end</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-content-flex-center"></use></svg>
-						<div class="child-item">center</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-content-flex-space-between"></use></svg>
-						<div class="child-item">space-between</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-content-flex-space-around"></use></svg>
-						<div class="child-item">space-around</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-content-stretch"></use></svg>
-						<div class="child-item">stretch</div>
-					</div>	
-						
-				
-				
-	</section>	
+	<div class="cell cell-layout">	
+		<div class="cellHeader">flex-wrap</div>
+			<div class="cellBody-Table">	
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>nowrap</div>
+				<div><svg><use href="#flex-wrap"></use></svg></div>
+				<div>wrap</div>
+				<div><svg><use href="#flex-wrap-reverse"></use></svg></div>
+				<div>wrap-reverse</div>
+			</div>
+	</div>
 
-	<section class="special-section">
-		<div class="div-head">Children</div>
-				
-					<div class="cell">
-						<svg><use href="#hor"></use></svg>
-						<div class="child-item">order: integer</div>
-					</div>	
+	<div class="cell cell-layout">	
+		<div class="cellHeader">align-items(cross-axis)</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#align-items-flex-start"></use></svg></div>
+				<div>flex-start</div>
+				<div><svg><use href="#align-items-flex-end"></use></svg></div>
+				<div>flex-end</div>
+				<div><svg><use href="#align-items-flex-center"></use></svg></div>
+				<div>center</div>
+				<div><svg><use href="#align-items-flex-start"></use></svg></div>
+				<div>baseline</div>
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>stretch</div>
+			</div>
+	</div>
 						
-					<div class="cell">
-						<svg><use href="#flex-grow1"></use></svg>
-						<div class="child-item">flex-grow: 1 (all)</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-grow123"></use></svg>
-						<div class="child-item">flex-grow (1,2, and 3)</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-basis"></use></svg>
-						<div class="child-item">flex-basis: 20% 40%</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#flex-shrink"></use></svg>
-						<div class="child-item">flex-shrink: 2</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#align-self"></use></svg>
-						<div class="child-item">align-self: flex-end (3rd)</div>
-					</div>	
-						
-				
-	</section>
+	<div class="cell cell-layout">	
+		<div class="cellHeader">justify-content</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#flex-start"></use></svg></div>
+				<div class="child-item">flex-start</div>
+				<div><svg><use href="#flex-end"></use></svg></div>
+				<div class="child-item">flex-end</div>
+				<div><svg><use href="#justify-content-center"></use></svg></div>
+				<div class="child-item">center</div>
+				<div><svg><use href="#justify-content-space-between"></use></svg></div>
+				<div class="child-item">space-between</div>
+				<div><svg><use href="#justify-content-space-around"></use></svg></div>
+				<div class="child-item">space-around</div>
+				<div><svg><use href="#justify-content-space-evenly"></use></svg></div>
+				<div class="child-item">space-evenly</div>
+			</div>
+	</div>
+	
+	<div class="cell cell-layout">	
+		<div class="cellHeader">align-content: (multiline)</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#align-content-flex-start"></use></svg></div>
+				<div>flex-start</div>
+				<div><svg><use href="#align-content-flex-end"></use></svg></div>
+				<div>flex-end</div>
+				<div><svg><use href="#align-content-flex-center"></use></svg></div>
+				<div>center</div>
+				<div><svg><use href="#align-content-flex-space-between"></use></svg></div>
+				<div>space-between</div>
+				<div><svg><use href="#align-content-flex-space-around"></us</svg></div>
+				<div>space-around</div>
+				<div><svg><use href="#align-content-stretch"></use></svg></div>
+				<div>stretch</div>
+			</div>
+	</div>
 
-<section class="vertical" >
-<a class="anchor" id="grid-section"></a>GRID
+	<div class="cell cell-layout cell-wide">	
+		<div class="cellHeader">children</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#hor"></use></svg></div>
+				<div>order: integer</div>
+				<div><svg><use href="#flex-grow1"></use></svg></div>
+				<div>flex-grow: 1 (all)</div>
+				<div><svg><use href="#flex-grow123"></use></svg></div>
+				<div>flex-grow (1,2, and 3)</div>
+				<div><svg><use href="#flex-basis"></use></svg></div>
+				<div>flex-basis: 20% 40%</div>
+				<div><svg><use href="#flex-shrink"></use></svg></div>
+				<div>flex-shrink: 2</div>
+				<div><svg><use href="#align-self"></use></svg></div>
+				<div>align-self: flex-end (3rd)</div>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">display</div>
+			<div class="cellBody-Table">	
+				<div><svg><use href="#vert2"></use></svg></div>
+				<div>grid</div>
+				<div><svg><use href="#vert2"></use></svg></div>
+				<div>inline-grid</div>
+				<div><svg><use href="#vert2"></use></svg></div>
+				<div>subgrid</div>
+			</div>
+	</div>
+	
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">grid-template</div>
+			<div class="cellBody-Narrow-Table">		
+				<div><svg><use href="#nineBoxes"></use></svg></div>
+				<div>columns: 12px 12px 12px (repeat (3, 12px)</div>
+				<div><svg><use href="#nineBoxes"></use></svg></div>
+				<div>rows: 12px 12px 12px</div>
+				<div><svg><use href="#nineBoxesSized"></use></svg></div>
+				<div>c: 8px auto 8px, r: 8px auto 8px</div>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">grid-gap</div>
+			<div class="cellBody-Narrow-Table">	
+				<div><svg><use href="#nineBoxesSkinny"></use></svg></div>
+				<div>grid-row-gap: 1px; grid-column-gap: 9px;</div>
+				<div><svg><use href="#nineBoxesSkinny"></use></svg></div>
+				<div>grid-gap: 1px 9px;</div>
+				<div><svg><use href="#nineBoxesSmall"></use></svg></div>
+				<div>grid-gap: 6px</div>
+			</div>
+	</div>
+				
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">justify-items (h)</div>
+			<div class="cellBody-Table">				
+				<div><svg><use href="#nineBoxesSkinnyLeft"></use></svg></div>
+				<div>start</div>
+				<div><svg><use href="#nineBoxesSkinnyRight"></use></svg></div>	
+				<div>end</div>
+				<div><svg><use href="#nineBoxesSkinny"></use></svg></div>	
+				<div>center</div>
+				<div><svg><use href="#nineBoxes"></use></svg></div>	
+				<div>stretch(d)</div>
+			</div>
+	</div>
+					
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">align-items (v)</div>
+			<div class="cellBody-Table">	
+				<div><svg><use href="#nineBoxesStart"></use></svg></div>	
+				<div>start</div>
+				<div><svg><use href="#nineBoxesEnd"></use></svg></div>		
+				<div>end</div>
+				<div><svg><use href="#nineBoxesCenter"></use></svg></div>
+				<div>center</div>
+				<div><svg><use href="#nineBoxes"></use></svg></div>		
+				<div>stretch(d)</div>
+			</div>
+	</div>
+	
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">auto</div>
+			<div class="cellBody-Narrow-Table">
+				<div><svg><use href="#auto-flow-row"></use></svg></div>	
+				<div>grid-auto-flow: row</div>
+				<div><svg><use href="#auto-flow-col"></use></svg></div>		
+				<div>grid-auto-flow: column</div>
+				<div><svg><use href="#nineBoxes"></use></svg></div>		
+				<div>grid-auto-flow: dense</div>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">justify-content (small grid h)</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#nineBoxesScaledownStart"></use></svg></div>	
+				<div>start</div>
+				<div><svg><use href="#nineBoxesScaledownEnd"></use></svg></div>		
+				<div>end</div>
+				<div><svg><use href="#nineBoxesScaledownCenter"></use></svg></div>		
+				<div>center</div>
+				<div><svg><use href="#nineBoxesScaledownStart"></use></svg></div>		
+				<div>stretch</div>
+				<div><svg><use href="#grid-space-around"></use></svg></div>
+				<div>space-around</div>
+				<div><svg><use href="#grid-space-between"></use></svg></div>		
+				<div>space-between</div>
+				<div><svg><use href="#grid-space-evenly"></use></svg></div>	<div>space-evenly</div>
+			</div>
+	</div>
+					
+	<div class="cell cell-layout cell-grid">	
+		<div class="cellHeader">align-content (small grid v)</div>
+			<div class="cellBody-Table">
+				<div><svg><use href="#nineBoxesScaledownStart"></use></svg></div>
+				<div>start</div>
+				<div><svg><use href="#nineBoxesScaledownBottom"></use</svg></div>	
+				<div>end</div>
+				<div><svg><use href="#nineBoxesScaledownVCenter"></use</svg></div>	
+				<div>center</div>
+				<div><svg><use href="#nineBoxesScaledownStart"></use</svg></div>	
+				<div>stretch</div>
+				<div><svg><use href="#nineBoxesScaledown-space-around"></use</svg></div>
+				<div>space-around</div>
+				<div><svg><use href="#nineBoxesScaledown-space-between"></use</svg></div>	
+				<div>space-between</div>
+				<div><svg><use href="#nineBoxesScaledown-space-evenly"></use</svg></div>
+				<div>space-evenly</div>
+			</div>	
+	</div>
+	
+	<div class="cell cell-layout">	
+		<div class="cellHeader">links</div>
+			<div class="cellBody">
+				<a href="https://www.w3.org/Style/CSS/">CSS Official</a>
+				<a href="https://dev.to/karaluton/introduction-to-css-grid-what-you-should-know-52np">Intro to Grid</a>
+				<a href="https://adam-marsden.co.uk/css-cheat-sheet">CSS Cheat Sheet</a>
+				<a href="https://devdocs.io/css/">CSS Ref</a>
+				<a href="https://emilkowalski.github.io/css-effects-snippets/">Effect Snippets</a>
+				<a href="https://vgpena.github.io/using-css-grid-the-right-way/">Grid Right Way</a>
+			</div>
+	</div>
 </section>
 
-	<section>
-		<div class="div-head">display</div>
-				
-					<div class="cell">
-						<svg><use href="#vert2"></use></svg>
-						<div class="child-item">grid</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#vert2"></use></svg>
-						<div class="child-item">inline-grid</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#vert2"></use></svg>
-						<div class="child-item">subgrid</div>
-					</div>	
-						
-				
+<a class="anchor" id="git-section"></a>
+<h2 class="cell-git">GIT</h2>
+<section>
+	<div class="cell cell-layout cell-git">	
+		<div class="cellHeader">new project</div>
+			<div class="cellBody">
+					git init https://repositoryurl mydir
+					git clone
+					git status
+					git log -3
+					git blame someFile.txt
+			</div>
+	</div>
+	
+	<div class="cell cell-layout cell-git">	
+		<div class="cellHeader">day to day</div>
+			<div class="cellBody-Even-Table">
+				<div>git pull</div>
+				<div>git add file.txt</div>
+				<div>git commit -am "message"</div>
+				<div>git add */*.html</div>
+				<div>git push</div>
+				<div>ls -la</div>
+				<div>git remove -v</div>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-git">	
+		<div class="cellHeader">branching</div>
+			<div class="cellBody">
+				git branch (-r, -a)
+				git branch abc (creates)
+				git checkout (switches)
+				git reset --hard HEAD (discards)
+			</div>
+	</div>
+	
+	<div class="cell cell-layout cell-git">	
+		<div class="cellHeader">links</div>
+			<div class="cellBody">
+				<a href="https://learngitbranching.js.org" target="_blank">Learn Branching</a>
+				<a href="https://github.com/Stryyder">GitHub</a>
+				<a href="https://pages.github.com">GitHub Pages</a>
+			</div>
+	</div>
+</section>
+
+<a class="anchor" id="regex-section"></a>
+<h2 class="cell-regex">REGEX</h2>					
+<section>
+	<div class="cell cell-layout cell-regex">	
+		<div class="cellHeader">modifiers</div>
+			<div class="cellBody-Narrow-Table">
+				<div>g</div><div>global match</div>
+				<div>i</div><div>case-insensitive</div>
+				<div>m</div><div>multiline</div>
+				<div>s</div><div>treat as single line</div>
+				<div>x</div><div>allow comments/white space</div>
+				<div>e</div><div>evaluate replacement</div>
+				<div>U</div><div>ungreedy pattern</div>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-regex">	
+		<div class="cellHeader">groups</div>
+			<div class="cellBody-Narrow-Table">
+				<div>[abc]</div><div>any char between</div>
+				<div>[^abc]</div><div>any char NOT between</div>
+				<div>[0-9]</div><div>any digit</div>
+				<div>[x|y]</div><div>any alternative listed</div>
+				<div>(?...)</div><div>passive (non-capturing)</div>
+				<div>\x</div><div>Group/subpattern x</div>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-regex">	
+		<div class="cellHeader">meta</div>
+			<div class="cellBody-Narrow-Table">
+				<div>.</div><div>single char (- newline or line terminator)</div>
+				<div>\w</div><div>word</div>
+				<div>\W</div><div>non-word</div>
+				<div>\d \D</div><div>digits</div>
+				<div>\s \S</div><div>whitespace</div>
+				<div>\b \B</div><div>beginning</div>
+				<div>\0</div><div>NUL</div>
+				<div>\n \f \r</div><div>new line \ form feed \ carriage return</div>
+				<div>\t \v</div><div>tab \ vertical tab</div>
+				<div>\xxx</div><div>char by octal num xxx</div>
+				<div>\xdd</div><div>hex</div>
+				<div>\uxxxx</div><div>unicode</div>
+			</div>
+	</div>
 		
-		<div class="div-head">grid-template</div>
-				
-					<div class="cell">
-						<svg><use href="#nineBoxes"></use></svg>
-						<div class="child-item">columns: 12px 12px 12px (repeat (3, 12px)</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#nineBoxes"></use></svg>
-						<div class="child-item">rows: 12px 12px 12px</div>
-					</div>	
-						
-					<div class="cell">
-						<svg><use href="#nineBoxesSized"></use></svg>
-						<div class="child-item">c: 8px auto 8px, r: 8px auto 8px</div>
-					</div>
-				
-	</section>
-	
-	<section>
-			<div class="div-head">Grid gaps</div>
-				
-				<div class="cell">
-					<svg><use href="#nineBoxesSkinny"></use></svg>
-					<div class="child-item">grid-row-gap: 1px; grid-column-gap: 9px;</div>
-				</div>	
-				
-				<div class="cell">
-					<svg><use href="#nineBoxesSkinny"></use></svg>
-					<div class="child-item">grid-gap: 1px 9px;</div>
-				</div>
-				
-				<div class="cell">	
-					<svg><use href="#nineBoxesSmall"></use></svg>
-					<div class="child-item">grid-gap: 6px</div>
-				</div>
-				
-				
-			<div class="div-head">justify-items (h)</div>
-				
-				<div class="cell">	
-					<svg><use href="#nineBoxesSkinnyLeft"></use></svg>
-					<div class="child-item">start</div>
-				</div>
-					
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesSkinnyRight"></use></svg>	
-					<div class="child-item">end</div>
-				</div>
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesSkinny"></use></svg>	
-					<div class="child-item">center</div>
-				</div>
-				
-				<div class="cell">	
-					<svg><use href="#nineBoxes"></use></svg>	
-					<div class="child-item">stretch(default)</div>
-				</div>	
-					
-				
-	</section>
-	
-	<section>	
-			<div class="div-head">align-items (v)</div>
-				
-				<div class="cell">	
-					<svg><use href="#nineBoxesStart"></use></svg>	
-					<div class="child-item">start</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesEnd"></use></svg>		
-					<div class="child-item">end</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesCenter"></use></svg>		
-					<div class="child-item">center</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxes"></use></svg>		
-					<div class="child-item">stretch(default)</div>
-				</div>	
-					
-				
-			<div class="div-head">Auto</div>
-				<div class="cell">	
-					<svg><use href="#auto-flow-row"></use></svg>	
-					<div class="child-item">grid-auto-flow: row</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#auto-flow-col"></use></svg>		
-					<div class="child-item">grid-auto-flow: column</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxes"></use></svg>		
-					<div class="child-item">grid-auto-flow: dense</div>
-				</div>
-				
-	</section>				
-	
-	<section>	
-			<div class="div-head">justify-content (small grid (h))</div>
-				
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownStart"></use></svg>	
-					<div class="child-item">start</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownEnd"></use></svg>		
-					<div class="child-item">end</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownCenter"></use></svg>		
-					<div class="child-item">center</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownStart"></use></svg>		
-					<div class="child-item">stretch</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#grid-space-around"></use></svg>		
-					<div class="child-item">space-around</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#grid-space-between"></use></svg>		
-					<div class="child-item">space-between</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#grid-space-evenly"></use></svg>		
-					<div class="child-item">space-evenly</div>
-				</div>
-					
-	</section>	
-
-	<section>
-		<div class="div-head">align-content (small grid (v))</div>
-				
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownStart"></use></svg>
-					<div class="child-item">start</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownBottom"></use></svg>	
-					<div class="child-item">end</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownVCenter"></use></svg>	
-					<div class="child-item">center</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledownStart"></use></svg>	
-					<div class="child-item">stretch</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledown-space-around"></use></svg>	
-					<div class="child-item">space-around</div>
-				</div>	
-					
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledown-space-between"></use></svg>	
-					<div class="child-item">space-between</div>
-				</div>
-				
-				<div class="cell">	
-					<svg><use href="#nineBoxesScaledown-space-evenly"></use></svg>
-					<div class="child-item">space-evenly</div>
-				</div>	
-					
-				
-	</section>
-	
-	<section>
-	<a href="https://www.w3.org/Style/CSS/">CSS Official</a>
-	<a href="https://dev.to/karaluton/introduction-to-css-grid-what-you-should-know-52np">Intro to Grid</a>
-	<a href="https://adam-marsden.co.uk/css-cheat-sheet">CSS Cheat Sheet</a>
-	<a href="https://devdocs.io/css/">CSS Ref</a>
-	<a href="https://emilkowalski.github.io/css-effects-snippets/">Effect Snippets</a>
-	<a href="https://vgpena.github.io/using-css-grid-the-right-way/">Grid Right Way</a>
-	</section>
-
-<section class="vertical">
-<a class="anchor" id="git-section"></a>git
-</section>
-
-	<section>
-		<div class="div-head">New Project</div>
-				
-					<div class="child-item">git init https://repositoryurl mydir</div>
-					<div class="child-item">git clone</div>
-					<div class="child-item">git status</div>
-					<div class="child-item">git log -3</div>
-					<div class="child-item">git blame someFile.txt</div>
-					
-	</section>
-	<section>
-		<div class="div-head">Day to Day</div>
-				
-					<div class="child-item">git pull</div>
-					<div class="child-item">git add file.txt</div>
-					<div class="child-item">git commit -am "message"</div>
-					<div class="child-item">git add */*.html</div>
-					<div class="child-item">git push</div>
-					
-	</section>
-	<section>
-		<div class="div-head">Branching</div>
-				
-					<div class="child-item">git branch (-r, -a)</div>
-					<div class="child-item">git branch abc (creates)</div>
-					<div class="child-item">git checkout (switches)</div>
-					<div class="child-item">git reset --hard HEAD (discards)</div>
-					<div class="child-item">git push</div>
-					<div class="child-item"><a href="https://learngitbranching.js.org" target="_blank">Learn Branching</a></div>
-					
-	</section>
-	<section>
-		<a href="https://github.com/Stryyder">GitHub</a>
-		<a href="https://pages.github.com">GitHub Pages</a>
-	</section>
-	<section>
-		additional git info
-	</section>
-	<section>
-		additional git info
-	</section>
-	
-	<section class="vertical">
-		RegExp
-	</section>
-	
-	<section id="regex-section">
-		<div class="div-head">Modifiers</div>
-				
-					<div class="child-item">g - global match</div>
-					<div class="child-item">i - case-insensitive</div>
-					<div class="child-item">m - multiline</div>
-					<div class="child-item">s - treat as single line</div>
-					<div class="child-item">x - allow comments/white space</div>
-					<div class="child-item">e - evaluate replacement</div>
-					<div class="child-item">U - ungreedy pattern</div>
-					
-		<div class="div-head">Groups</div>
-				
-					<div class="child-item">[abc] - any char between</div>
-					<div class="child-item">[^abc] - any char NOT between</div>
-					<div class="child-item">[0-9] - any digit</div>
-					<div class="child-item">[x|y] - any alternative listed</div>
-					<div class="child-item">(?...) - passive (non-capturing)</div>
-					<div class="child-item">\x - Group/subpattern x</div>
-				
-	</section>
-	<section>
-		<div class="div-head">Meta</div>
-				
-					<div class="child-item">. - single char (- newline or line terminator)</div>
-					<div class="child-item">\w - word</div>
-					<div class="child-item">\W - non-word</div>
-					<div class="child-item">\d \D - digits</div>
-					<div class="child-item">\s \S - whitespace</div>
-					<div class="child-item">\b \B - beginning</div>
-					<div class="child-item">\0 - NUL</div>
-					<div class="child-item">\n \f \r - new line \ form feed \ carriage return</div>
-					<div class="child-item">\t \v - tab \ vertical tab</div>
-					<div class="child-item">\xxx - char by octal num xxx</div>
-					<div class="child-item">\xdd - hex</div>
-					<div class="child-item">\uxxxx - unicode</div>
+	<div class="cell cell-layout cell-regex">	
+		<div class="cellHeader">quantifier</div>
+			<div class="cellBody-Narrow-Table">
+				<div>n+</div><div>at least one n</div>
+				<div>n*</div><div>zero or more n</div>
+				<div>n?</div><div>zero or one n</div>
+				<div>n{X}</div><div>sequence of X n's</div>
+				<div>n{X,Y}</div><div>sequence X to Y n's</div>
+				<div>n{X,}</div><div>sequence at least X n's</div>
+				<div>n$</div><div>n at end</div>
+				<div>^n</div><div>n at start</div>
+				<div>?=n</div><div>followed by n</div>
+				<div>?!n</div><div>not followed by n</div>
+			</div>
+	</div>
 		
-	</section>
-	<section>
-		<div class="div-head">Quantifier</div>
-				
-					<div class="child-item">n+ - at least one n</div>
-					<div class="child-item">n* - zero or more n</div>
-					<div class="child-item">n? - zero or one n</div>
-					<div class="child-item">n{X} - sequence of X n's</div>
-					<div class="child-item">n{X,Y} - sequence X to Y n's</div>
-					<div class="child-item">n{X,} - sequence at least X n's</div>
-					<div class="child-item">n$ - n at end</div>
-					<div class="child-item">^n - n at start</div>
-					<div class="child-item">?=n - followed by n</div>
-					<div class="child-item">?!n - not followed by n</div>
-					
-		
-	</section>
-		<section>
-		<div class="div-head">String Replacement</div>
-				
-					<div class="child-item">$n - nth non-passive</div>
-					<div class="child-item">$` - Before matched</div>
-					<div class="child-item">$' - After matched</div>
-					<div class="child-item">$+ - last matched</div>
-					<div class="child-item">$& - Entire matched</div>
-	</section>
-	<section>
-		<a href="https://media.cheatography.com/storage/thumb/davechild_regular-expressions.750.jpg?last=1463066188">Regex sheet</a>
-	</section>
-	<section>
-		additional regExp info
-	</section>
-
-
+	<div class="cell cell-layout cell-regex">	
+		<div class="cellHeader">string replacement</div>
+			<div class="cellBody-Narrow-Table">
+				<div>$n</div><div>nth non-passive</div>
+				<div>$`</div><div>Before matched</div>
+				<div>$'</div><div>After matched</div>
+				<div>$+</div><div>last matched</div>
+				<div>$&</div><div>Entire matched</div>
+			</div>
+	</div>
 	
-<section class="vertical">
-	<a class="anchor" id="html-section"></a>html/css
+	<div class="cell cell-layout cell-regex">	
+		<div class="cellHeader">links</div>
+			<div class="cellBody">
+				<a href="https://media.cheatography.com/storage/thumb/davechild_regular-expressions.750.jpg?last=1463066188">Regex sheet</a>
+			</div>
+	</div>
+</section>	
+	
+<!-- ==================== LAYOUT =======================  -->	
+<a class="anchor" id="tools-section"></a>
+<h2 class="cell-tools">TOOLS</h2>
+<section>
+	<div class="cell cell-layout cell-tools">	
+		<div class="cellHeader">tools</div>
+			<div class="cellBody">
+				<a href="https://fonts.google.com">Google Fonts</a>
+				<a href="https://color.adobe.com/create/color-wheel/">Color Wheel</a>
+				<a href="https://html-color.codes">Hex Codes</a>
+				<a href="https://jshint.com">jsHint</a>
+				<a href="https://jsfiddle.net">JS Fiddle</a>
+				<a href="https://translate.google.com">Translate</a>
+				<a href="https://codepen.io/dashboard/">Codepen</a>
+			</div>
+	</div>
+	
+	<div class="cell cell-layout cell-tools">	
+		<div class="cellHeader">standards</div>
+			<div class="cellBody">
+				<a href="https://support.google.com/webmasters/answer/7451184?hl=en">SEO Guide</a>
+				<a href="https://www.checkbot.io/guide/seo/">SEO Best Practice</a>
+				<a href="http://json.org">JSON Ref</a>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-tools">	
+		<div class="cellHeader">inbox</div>
+			<div class="cellBody">
+				<a href="https://learninglabs.cisco.com">LL Cisco</a>
+				<a href="https://leetcode.com">Leetcode</a>			
+				<a href="https://www.freecodecamp.org">fcc</a> 
+				<a href="http://www.phphelp.com/php_tutorial/getting-started-with-php.php">php help</a>
+				<a href="http://www.phptherightway.com/">php right way</a> 
+				<a href="https://jamstack.org">Jamstack</a>
+				<a href="https://webtask.io">Webtask</a>
+				<a href="https://www.udemy.com">Udemy</a>
+				<a href="https://www.html-5-tutorial.com/all-html-tags.htm">All HTML</a>
+				<a href="https://css-tricks.com">CSS-Tricks</a>
+				<a href="https://frontendmasters.com/books/front-end-handbook/2018/">F-E Handbook</a>
+				<a href="https://www.24a11y.com/2018/the-d-in-the-dom/">D in DOM</a>
+				<a href="https://bitbucket.org">Bitbucket</a>
+			    <a href="https://dribbble.com">Dribbble</a>
+			</div>
+	</div>
+
+	<div class="cell cell-layout cell-tools">	
+		<div class="cellHeader">graphics</div>
+			<div class="cellBody">
+				<a href="https://www.pexels.com">Pexels</a>
+				<a href="https://pixabay.com">Pixabay</a>
+				 <a href="https://unsplash.com">Unsplash</a>
+				 <a href="https://pixelmob.co">Pixelmob</a>
+				 <a href="https://foter.com">Foter</a>
+				 <a href="https://www.stockvault.net">Stockvault</a>
+				 <a href="https://allthefreestock.com">Free Stock</a>
+			</div>
+	</div>
 </section>
-	
-	<section>
-		<div class="div-head">tools</div>
-			<div class="cell">	
-				<div class="child-item">	
-					<a href="https://fonts.google.com">Google Fonts</a>
-					<a href="https://color.adobe.com/create/color-wheel/">Color Wheel</a>
-					<a href="https://html-color.codes">Hex Codes</a>
-					<a href="https://jshint.com">jsHint</a>
-					<a href="https://jsfiddle.net">JS Fiddle</a>
-					
-					<a href="https://translate.google.com">Translate</a>
-					<a href="https://codepen.io/dashboard/">Codepen</a>
-				</div>
-			</div>
-	</section>
-	<section>
-	<div class="div-head">standards</div>
-			<div class="cell">	
-				<div class="child-item">	
-					<a href="https://support.google.com/webmasters/answer/7451184?hl=en">SEO Guide</a>
-					<a href="https://www.checkbot.io/guide/seo/">SEO Best Practice</a>
-					<a href="http://json.org">JSON Ref</a>
-
-					
-					svg layout inspired by: <a href= "http://grid.malven.co">malven</a>
-				</div>
-			</div>
-	</section>
-	<section>
-	<div class="div-head">inbox</div>
-			<div class="cell">	
-				<div class="child-item">
-					<a href="https://learninglabs.cisco.com">LL Cisco</a>
-					<a href="https://leetcode.com">Leetcode</a>			
-					<a href="https://www.freecodecamp.org">fcc</a> 
-					<a href="http://www.phphelp.com/php_tutorial/getting-started-with-php.php">php help</a>
-					<a href="http://www.phptherightway.com/">php right way</a> 
-					<a href="https://jamstack.org">Jamstack</a>
-					<a href="https://webtask.io">Webtask</a>
-					<a href="https://www.udemy.com">Udemy</a>
-				</div>
-			</div>
-	</section>
-	<section>
-	<div class="div-head">inbox</div>
-			<div class="cell">	
-				<div class="child-item">
-					<a href="https://www.html-5-tutorial.com/all-html-tags.htm">All HTML</a>
-					<a href="https://css-tricks.com">CSS-Tricks</a>
-					<a href="https://frontendmasters.com/books/front-end-handbook/2018/">F-E Handbook</a>
-					<a href="https://www.24a11y.com/2018/the-d-in-the-dom/">D in DOM</a>
-					<a href="https://bitbucket.org">Bitbucket</a>
-				    <a href="https://dribbble.com">Dribbble</a>
-				</div>
-			</div>
-	</section>
-	<section>
-		<div class="div-head">graphics</div>
-			<div class="cell">	
-				<div class="child-item">
-				  <a href="https://www.pexels.com">Pexels</a>
-				  <a href="https://pixabay.com">Pixabay</a>
-				  <a href="https://unsplash.com">Unsplash</a>
-				  <a href="https://pixelmob.co">Pixelmob</a>
-				  <a href="https://foter.com">Foter</a>
-				  <a href="https://www.stockvault.net">Stockvault</a>
-				  <a href="https://allthefreestock.com">Free Stock</a>
-				</div>
-			</div>
-	</section>
-	
-	
-	
-	
-	
-	
-	
-	
-</div>	
-
-
 
 
 <svg xmlns="http://www.w3.org/2000/svg" >
