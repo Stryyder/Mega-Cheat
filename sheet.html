@@ -4,6 +4,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" media="all"> 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="icon" type="image/png" href="img/fav.png">
+<meta name="viewport" content="width=device-width">
 <title>Mega Cheat sheet</title></head>
 <body>
 
@@ -13,7 +14,7 @@
 	<a href="#git-section" class="cell-git">git</a>
 	<a href="#regex-section" class="cell-regex">regex</a>
 	<a href="#tools-section" class="cell-tools">tools</a>
-	<a href="http://overapi.com">Other Sheets</a>
+	<a href="#testInput">test</a>
 </nav>
 
 <!-- ==================== LAYOUT =======================  -->
@@ -184,6 +185,7 @@
 				<div class="cellBody">
 					<a href="https://vanillajstoolkit.com/plugins/">JS Plugins</a>
 					<a href="https://eloquentjavascript.net">Eloquent JS</a>
+					<a href="http://overapi.com">Other Sheets</a>
 				</div>  
 		</div>
 
@@ -788,6 +790,39 @@
 			</div>
 	</div>
 </section>
+
+<div id="testInput">
+<form action ="#" onsubmit="runOnce()">
+  Paste Script</br><textarea name="inputScript" id="inputScript" rows="20" cols="70"></textarea></br>
+   <input type="submit" value="Run">
+</form>
+</div>
+
+
+
+<div id="testOutput">
+
+</div>
+<script>
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  // order doesn't matter
+  // which thing is different between them
+
+ newArr = arr1.forEach((item) => arr2.forEach(item)); 
+
+
+  return newArr;
+}
+
+var test = diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+// Display script results - change new_s variable as needed
+document.getElementById("testOutput").innerHTML = test;
+
+</script>
+
+
 
 
 <svg xmlns="http://www.w3.org/2000/svg" >
