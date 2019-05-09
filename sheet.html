@@ -6,7 +6,7 @@
 <link rel="icon" type="image/png" href="img/fav.png">
 <meta name="viewport" content="width=device-width">
 <title>Mega Cheat sheet</title></head>
-<body>
+<body onload="runThisPastedScript()">
 
 <nav>
 	<a href="#" class="cell-JS">javascript</a>
@@ -17,7 +17,7 @@
 	<a href="#testInput">test</a>
 </nav>
 
-<!-- ==================== LAYOUT =======================  -->
+<!-- ==================== JAVASCRIPT =======================  -->
 <h2 class="cell-JS">JAVASCRIPT</h2>
 	<section id="javascript-section">
 		<div class="cell cell-JS">	
@@ -791,19 +791,25 @@
 	</div>
 </section>
 
-<div id="testInput">
-<form action ="#" onsubmit="runOnce()">
+<section>
+<div id="testInput" class="cell-wide">
+<form action ="#testInput" onsubmit="runOnce()">
   Paste Script</br><textarea name="inputScript" id="inputScript" rows="20" cols="70"></textarea></br>
-   <input type="submit" value="Run">
+   <input type="button" value="Run">
 </form>
 </div>
 
 
 
-<div id="testOutput">
+<div id="testOutput" class="cell-wide">
 
 </div>
+</section>
 <script>
+
+document.getElementById("testOutput").innerHTML = "pre-script";
+function runThisPastedScript {
+document.getElementById("testOutput").innerHTML = "script-ran";
 function diffArray(arr1, arr2) {
   var newArr = [];
   // order doesn't matter
@@ -818,8 +824,8 @@ function diffArray(arr1, arr2) {
 var test = diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 // Display script results - change new_s variable as needed
-document.getElementById("testOutput").innerHTML = test;
-
+document.getElementById("testOutput").innerHTML = "test";
+}
 </script>
 
 
