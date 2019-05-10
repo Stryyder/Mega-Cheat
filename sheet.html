@@ -6,7 +6,7 @@
 <link rel="icon" type="image/png" href="img/fav.png">
 <meta name="viewport" content="width=device-width">
 <title>Mega Cheat sheet</title></head>
-<body onload="runThisPastedScript()">
+<body>
 
 <nav>
 	<a href="#" class="cell-JS">javascript</a>
@@ -792,10 +792,10 @@
 </section>
 
 <section>
-<div id="testInput" class="cell-wide">
-<form action ="#testInput" onsubmit="runOnce()">
+<div class="cell-wide">
+<form action ="#testInput" id="testInput">
   Paste Script</br><textarea name="inputScript" id="inputScript" rows="20" cols="70"></textarea></br>
-   <input type="button" value="Run">
+   <input type="button" value="Run" onclick="justDoIt();">
 </form>
 </div>
 
@@ -807,25 +807,21 @@
 </section>
 <script>
 
-document.getElementById("testOutput").innerHTML = "pre-script";
-function runThisPastedScript {
-document.getElementById("testOutput").innerHTML = "script-ran";
+
 function diffArray(arr1, arr2) {
   var newArr = [];
-  // order doesn't matter
-  // which thing is different between them
+ // for each of one, is it in the other
+  // put in one array, sort it, remove any without dupes
+  
+ return newArr = [...arr1, ...arr2].sort((a,b) => a - b);
 
- newArr = arr1.forEach((item) => arr2.forEach(item)); 
 
-
-  return newArr;
 }
 
-var test = diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+var test = diffArray([1, 2, 3, 5,25], [1, 2, 3, 4, 5, 25]);
 
-// Display script results - change new_s variable as needed
-document.getElementById("testOutput").innerHTML = "test";
-}
+document.getElementById("testOutput").innerHTML = test;
+
 </script>
 
 
