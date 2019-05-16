@@ -809,33 +809,27 @@
 
 
 function diffArray(arr1, arr2) {
-var result = [];
-let biggestArr = [];
-let smallestArr = [];
-// not working because need to go through largest array number of times
 
-if (arr1.length >= arr2.length){
-	biggestArr = arr1;
-	smallestArr = arr2;
-}else{
-	biggestArr = arr2;
-	smallestArr = arr1;
-}
+// make one array out of both
+var newArr = arr1.concat(arr2);
+var resultArr = [];
+// create an object to take advantage of key/value pairs
+var obj = {};
 
-  var newArr = biggestArr.map((item) => {
-  
-  if (!smallestArr.includes(item)){
-	result.push(item);
-  }
-  
-  });
- return result; 
+
+// if obj key (i) already exists, the true is just reassigned, yielding no dupes
+for (let i of newArr){
+	obj[i] = true;
+	obj[i].count++;
+	
 }
 
 
-  
 
-var test = diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]);
+return Object.values(obj);
+}
+
+var test = diffArray([1, 2, 3, 4, 4, 5, 6, 7], [1, 2, 3, 4, 5]);
 
 document.getElementById("testOutput").innerHTML = test;
 
