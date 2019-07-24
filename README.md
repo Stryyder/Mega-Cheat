@@ -2,7 +2,7 @@
 Condensed Mega Cheat Sheet
 
 ## About:
-This is not intended to be an all-inclusive cheat sheet, but instead a personal reference for things I need to see fairly consistently. This is a living document.
+This is not intended to be an all-inclusive cheat sheet, but instead a personal reference for things I need to see fairly consistently. This is a living document. It's pretty ugly right now, but I hope to make each cell drag/dropable.
 
 ## Status:
 - Refurbish taking place on modular-responsive branch
