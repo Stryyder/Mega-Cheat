@@ -22,6 +22,7 @@ body {
 	--git-rep-color: #F6F8FA;
 	--regex-rep-color: blue;
 	--tools-rep-color: green;
+	--mobile-rep-color: pink;
 	--table-highlights: #222;
 	color: var(--main-text-color);
 	background-color: var(--main-bg);
@@ -160,6 +161,10 @@ section {
 
 .cell-tools {
 	box-shadow: 0 2px var(--tools-rep-color);
+}
+
+.cell-mobile {
+	box-shadow: 0 2px var(--mobile-rep-color);
 }
 
 .cell:nth-child(odd){
