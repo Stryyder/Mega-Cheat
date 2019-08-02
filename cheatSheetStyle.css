@@ -23,6 +23,7 @@ body {
 	--regex-rep-color: blue;
 	--tools-rep-color: green;
 	--mobile-rep-color: pink;
+	--libraries-rep-color: yellow;
 	--table-highlights: #222;
 	color: var(--main-text-color);
 	background-color: var(--main-bg);
@@ -165,6 +166,10 @@ section {
 
 .cell-mobile {
 	box-shadow: 0 2px var(--mobile-rep-color);
+}
+
+.cell-libraries {
+	box-shadow: 0 2px var(--libraries-rep-color);
 }
 
 .cell:nth-child(odd){

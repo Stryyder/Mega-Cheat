@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="style.css" rel="stylesheet" type="text/css" media="all"> 
+<link href="cheatSheetStyle.css" rel="stylesheet" type="text/css" media="all"> 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="icon" type="image/png" href="img/fav.png">
 <meta name="viewport" content="width=device-width">
@@ -15,6 +15,7 @@
 	<a href="#regex-section" class="cell-regex">regex</a>
 	<a href="#tools-section" class="cell-tools">tools</a>
 	<a href="#mobile-section" class="cell-mobile">mobile dimensions</a>
+	<a href="#libraries-section" class="cell-libraries">libraries</a>
 	<a href="#testInput">test</a>
 </nav>
 
@@ -915,6 +916,54 @@
 </section>
 
 
+<a class="anchor" id="libraries-section"></a>
+<section>
+	<div class="cell cell-libraries">	
+		<div class="cellHeader">setup</div>
+			<div>
+				link rel from maxcdn.bootstrapcdn.com/bootstrap
+			</div>
+			<div>
+				link rel font-awesome (same location)
+			</div>
+			
+		<div class="cellHeader">Bootstrap</div>
+			<div class=cellBody-Even-Table>
+				<div>btn</div><div>btn-default</div>
+				<div>btn-block</div><div>btn-primary</div>
+				<div>btn-info</div><div>btn-danger</div>
+				<div>col-md-*</div><div>col-xs-4</div>
+				<div>12-wide grid</div><div>i class=</div>
+				<div>fa fa-trash</div><div>fa fa-info-circle</div>
+				<div>fa fa-thumbs-up</div><div>fa fa-paper-plane</div>
+				<div>form-control</div><div>container-fluid</div>
+				<div>well</div><div>container-fluid</div>
+			</div>
+	</div>
+	<div class="cell cell-libraries">	
+		<div class="cellHeader">loading jQ</div>
+			<div>
+				$(document).ready(function() {});
+			</div>
+			<div>
+				link rel font-awesome (same location)
+			</div>
+			
+		<div class="cellHeader">jQuery</div>
+			<div class=cellBody-Even-Table>
+				<div>$ = bling</div><div>.addClass()</div>
+				<div>animated bounce, shake</div><div>$(".class")</div>
+				<div>$("#id")</div><div>removeClass()</div>
+				<div>.css("color","red")</div><div>.prop("disabled", true)</div>
+				<div>.html()</div><div>.text()</div>
+				<div>.remove()</div><div>.appendTo()</div>
+				<div>.clone()</div><div>.parent()</div>
+				<div>.children()</div><div>target:nth-child(n)</div>
+				<div>.target:even</div><div>hinge, fadeout</div>
+			</div>
+	</div>
+</section>
+
 
 
 <a class="anchor" id="testInput"></a>
@@ -925,36 +974,12 @@
 </div>
 </section>
 <script>
-function convertToRoman(num) {
- // 1 = I
- // 2 = II
- // 3 = III
- // 4 = IV
- // 5 = V
- // 6 = VI
- // 7 = VII
- // 8 = VIII
- // 9 = IX
- // 10 = X
- 
- 
- return num;
-}
 
 
 
-/*
-
-convert a number to roman numerals
-
-*/
+var test = 0;
 
 
-
-
-
-
-var test = convertToRoman(36);;
 
 document.getElementById("testOutput").innerHTML = test;
 </script>
