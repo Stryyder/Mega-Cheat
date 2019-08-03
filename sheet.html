@@ -945,10 +945,7 @@
 			<div>
 				$(document).ready(function() {});
 			</div>
-			<div>
-				link rel font-awesome (same location)
-			</div>
-			
+		
 		<div class="cellHeader">jQuery</div>
 			<div class=cellBody-Even-Table>
 				<div>$ = bling</div><div>.addClass()</div>
@@ -960,6 +957,28 @@
 				<div>.clone()</div><div>.parent()</div>
 				<div>.children()</div><div>target:nth-child(n)</div>
 				<div>.target:even</div><div>hinge, fadeout</div>
+			</div>
+	</div>
+	<div class="cell cell-libraries">	
+		<div class="cellHeader">Sass</div>
+			<div>
+				  <pre>$x: 1;
+@while $x < 11 {
+.text-#{$x} { font-size: 5px * $x}
+$x: $x + 1;
+}</pre>
+			</div>
+			
+		<div class="cellHeader">Sass</div>
+			<div class=cellBody-Even-Table>
+				<div>.scss extension(n)</div><div>.sass extension(o)</div>
+				<div>$variable: props</div><div>props = green;</div>
+				<div>nesting</div><div>mixin = @mixin "function"()</div>
+				<div>@include function</div><div>.prop("disabled", true)</div>
+				<div>@if condition { property }</div><div>@else if</div>
+				<div>#{$var}</div><div>@for through/to</div>
+				<div>@each</div><div>partials (_mixins.scss)</div>
+				<div>@import 'mixins'</div><div>@extend</div>
 			</div>
 	</div>
 </section>
