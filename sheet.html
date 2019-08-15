@@ -6,7 +6,7 @@
 <link rel="icon" type="image/png" href="img/fav.png">
 <meta name="viewport" content="width=device-width">
 <title>Mega Cheat sheet</title></head>
-<body>
+<body onLoad="clearCalc()">
 
 <nav>
 	<a href="#" class="cell-JS">javascript</a>
@@ -456,7 +456,7 @@
 				<div>center</div>
 				<div><svg><use href="#align-content-flex-space-between"></use></svg></div>
 				<div>space-between</div>
-				<div><svg><use href="#align-content-flex-space-around"></us</svg></div>
+				<div><svg><use href="#align-content-flex-space-around"></use></svg></div>
 				<div>space-around</div>
 				<div><svg><use href="#align-content-stretch"></use></svg></div>
 				<div>stretch</div>
@@ -581,17 +581,17 @@
 			<div class="cellBody-Table">
 				<div><svg><use href="#nineBoxesScaledownStart"></use></svg></div>
 				<div>start</div>
-				<div><svg><use href="#nineBoxesScaledownBottom"></use</svg></div>	
+				<div><svg><use href="#nineBoxesScaledownBottom"></use></svg></div>	
 				<div>end</div>
-				<div><svg><use href="#nineBoxesScaledownVCenter"></use</svg></div>	
+				<div><svg><use href="#nineBoxesScaledownVCenter"></use></svg></div>	
 				<div>center</div>
-				<div><svg><use href="#nineBoxesScaledownStart"></use</svg></div>	
+				<div><svg><use href="#nineBoxesScaledownStart"></use></svg></div>	
 				<div>stretch</div>
-				<div><svg><use href="#nineBoxesScaledown-space-around"></use</svg></div>
+				<div><svg><use href="#nineBoxesScaledown-space-around"></use></svg></div>
 				<div>space-around</div>
-				<div><svg><use href="#nineBoxesScaledown-space-between"></use</svg></div>	
+				<div><svg><use href="#nineBoxesScaledown-space-between"></use></svg></div>	
 				<div>space-between</div>
-				<div><svg><use href="#nineBoxesScaledown-space-evenly"></use</svg></div>
+				<div><svg><use href="#nineBoxesScaledown-space-evenly"></use></svg></div>
 				<div>space-evenly</div>
 			</div>	
 	</div>
@@ -1005,20 +1005,42 @@ $x: $x + 1;
 
 <a class="anchor" id="testInput"></a>
 <section>
+<input id="calculator" >&nbsp;</input>
+<button id="goCalc" type="submit" onClick="runCalculator()">Calculate it</button>
+<button id="clearCalc" onClick="clearCalc()">Clear</button>
 
 <div id="testOutput" class="console-log">
 
 </div>
 </section>
+
+
 <script>
 
+	function clearCalc(){
+		document.getElementById("calculator").value = '';
+	}
+	
+	function runCalculator(){
+		// order of operations
+		// * / + -
+		var calcInput = document.getElementById("calculator").value;
+					
+			if (calcInput == ""){
+				calcInput = "Empty";
+			}else {
+				calcInput = "= " + filteredInput(calcInput);
+				document.getElementById("testOutput").innerHTML = calcInput;
+			}
 
+			function filteredInput(calcInput){
+				// filter so it's only numbers and operation symbols
+					calcInput = calcInput.replace(/[A-Za-z\s]/g, '');
+					return eval(calcInput);
+			}
+		
+	}	
 
-var test = 0;
-
-
-
-document.getElementById("testOutput").innerHTML = test;
 </script>
 
 

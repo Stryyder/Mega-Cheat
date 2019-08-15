@@ -249,7 +249,21 @@ h2 {
 
 
 
-
+#calculator {
+  border: 1px solid black;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: monospace;
+  background-color: #000;
+  color: #eee;
+  width: 100%;
+  max-width: 600px;
+  max-height: 2em;
+  font-size: 2em;
+  line-height: 2em;
+  overflow: hidden;
+  
+}
 
 #testOutput {
 background-color: #EAEAEB;
