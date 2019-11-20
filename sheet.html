@@ -225,6 +225,28 @@
 					<div>46</div><div>delete</div><div>48-57</div><div>0-9</div>
 					<div>65-90</div><div>a-z</div><div>91</div><div>left(w)</div>
 				</div>
+				<div id="keyCodeConverter">
+						<label for="charConverter">Enter Key to convert to Char Code</label></br>
+					<input name="charConverter" type="text" maxlength="1" placeholder="Char" id="charConverter"/>
+					&equals; <span id="convertedChar">empty</span></br>
+					<button id="convertIt" type="submit" onClick="convertIt()">Convert</button>
+					<script>
+
+						function convertIt(){
+						let inputCharCode = document.getElementById("charConverter");
+						let convertedCode = document.getElementById("convertedChar");
+						if (inputCharCode.innerHTML !== null){
+							convertedCode.innerHTML = inputCharCode.value.charCodeAt();
+							
+							console.log(convertedCode.innerHTML);
+
+						}
+						}
+
+					</script>
+
+				</div>	
+
 		</div>
 
 		<div class="cell cell-JS">	
